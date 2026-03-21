@@ -1,0 +1,17 @@
+{
+  "clientId": "client-a",
+  "brandName": "Client A",
+  "locale": "en-US",
+  "colors": {
+    "primary": "#111111",
+    "secondary": "#666666",
+    "background": "#ffffff"
+  },
+  "typography": {
+    "bodyFontStack": "Arial, Helvetica, sans-serif",
+    "headingFontStack": "Georgia, 'Times New Roman', serif"
+  },
+  "assets": {
+    "logoUrl": "assets/logos/"
+  }
+}

@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / tooling (local)
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & secrets (if you add build/deploy tooling later)
+.env
+.env.*
+!.env.example
+
+# Dependencies (if you add Node-based linters/build later)
+node_modules/
+
+# Python (if you add scripts later)
+.venv/
+__pycache__/
+*.py[cod]
+
+# Build output (if you add a compile step later)
+dist/
+build/
+.cache/
