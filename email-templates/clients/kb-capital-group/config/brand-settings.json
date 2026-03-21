@@ -1,17 +1,36 @@
 {
-  "clientId": "client-a",
-  "brandName": "Client A",
+  "clientId": "kb-capital-group",
+  "brandName": "KB Capital Group",
   "locale": "en-US",
   "colors": {
-    "primary": "#111111",
-    "secondary": "#666666",
-    "background": "#ffffff"
+    "primary": "#00aeef",
+    "secondary": "#033047",
+    "background": "#efebe5",
+    "backgroundAlt": "#f2fafc",
+    "backgroundNeutral": "#f5f5f5",
+    "accentGold": "#b79c2f",
+    "mutedGold": "#a08658",
+    "text": "#131313",
+    "textDark": "#000101",
+    "textBody": "#44464a",
+    "textMuted": "#787771",
+    "divider": "#00adef",
+    "footerLink": "#68a0a9",
+    "topBar": "#787771"
   },
   "typography": {
-    "bodyFontStack": "Arial, Helvetica, sans-serif",
-    "headingFontStack": "Georgia, 'Times New Roman', serif"
+    "bodyFontStack": "Nunito, Arial, Helvetica Neue, Helvetica, sans-serif",
+    "headingFontStack": "Merriweather, Georgia, serif",
+    "displayFontStack": "'Playfair Display', Georgia, serif"
   },
   "assets": {
-    "logoUrl": "assets/logos/"
+    "logoUrl": "assets/logo/"
+  },
+  "contact": {
+    "phoneDisplay": "888-886-6115",
+    "phoneTel": "8888866115",
+    "website": "https://www.kbcapitalgrp.com",
+    "email": "kory@kbcapitalgrp.com",
+    "address": "5652 Fallbrook Ave, Woodland Hills, CA 91367"
   }
 }
