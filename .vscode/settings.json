@@ -1,0 +1,16 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.associations": {
+        "**/emails/**/*.html": "html",
+        "**/*.email.html": "html",
+        "**/*.template.html": "html"
+        },
+    "prettier.enable": true,
+    "emmet.includeLanguages": {
+        "html": "html"
+        },
+    "[html]": {
+        "editor.formatOnSave": true
+        }
+}
+
