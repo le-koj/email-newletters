@@ -21,7 +21,15 @@
   "typography": {
     "bodyFontStack": "Nunito, Arial, Helvetica Neue, Helvetica, sans-serif",
     "headingFontStack": "Merriweather, Georgia, serif",
-    "displayFontStack": "'Playfair Display', Georgia, serif"
+    "displayFontStack": "'Playfair Display', Georgia, serif",
+    "fontSize": {
+      "body": "16px",
+      "bodySmall": "14px",
+      "footer": "12px",
+      "sectionHeading": "20px",
+      "ctaHeading": "18px",
+      "cardTitle": "17px"
+    }
   },
   "assets": {
     "logoUrl": "assets/logos/"
