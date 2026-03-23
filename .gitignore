@@ -18,15 +18,29 @@ yarn-error.log*
 .env.*
 !.env.example
 
-# Dependencies (if you add Node-based linters/build later)
+# Dependencies
 node_modules/
+
+# Node / npm
+.npm
+.yarn/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.cache/
+
+# React Email / Next.js preview
+.next/
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage
+coverage/
 
 # Python (if you add scripts later)
 .venv/
 __pycache__/
 *.py[cod]
-
-# Build output (if you add a compile step later)
-dist/
-build/
-.cache/
