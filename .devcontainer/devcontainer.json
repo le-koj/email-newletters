@@ -1,0 +1,11 @@
+{
+  "name": "Email Newsletters",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+  "postCreateCommand": "node --version && npm --version"
+}
