@@ -1,0 +1,29 @@
+<!--
+  KB Capital Group — CTA button (navy pill style)
+  Outlook-compatible with VML fallback.
+  Variables: {{URL}}, {{BUTTON_TEXT}}, {{BACKGROUND_COLOR}} (default #033047)
+  Usage: Replace variables before including in templates.
+-->
+<a href="{{URL}}" target="_blank" style="color: #ffffff; text-decoration: none">
+  <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{URL}}" style="height:44px;width:200px;v-text-anchor:middle;" arcsize="50%" fillcolor="{{BACKGROUND_COLOR}}">
+  <v:stroke dashstyle="Solid" weight="0px" color="{{BACKGROUND_COLOR}}"/>
+  <w:anchorlock/>
+  <v:textbox inset="0px,0px,0px,0px">
+  <center style="color:#ffffff;font-family:sans-serif;font-size:16px">
+  <![endif]-->
+  <span
+    class="kb-cta-button"
+    style="
+      display: inline-block;
+      background-color: {{BACKGROUND_COLOR}};
+      color: #ffffff;
+      font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 16px;
+      padding: 12px 32px;
+      border-radius: 22px;
+      text-align: center;
+    "
+  >{{BUTTON_TEXT}}</span>
+  <!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+</a>
