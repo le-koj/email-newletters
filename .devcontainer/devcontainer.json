@@ -2,6 +2,9 @@
   "name": "Email Newsletters",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22",
   "features": {},
+  "remoteEnv": {
+    "PATH": "/usr/local/bin:/usr/local/share/nvm/current/bin:${containerEnv:PATH}"
+  },
   "customizations": {
     "vscode": {
       "extensions": []
