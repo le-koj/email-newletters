@@ -1,7 +1,8 @@
 {
   "devDependencies": {
-    "@react-email/preview-server": "5.2.10",
-    "react-email": "5.2.10"
+    "@react-email/preview-server": "^5.2.11",
+    "mjml": "^5.2.0",
+    "react-email": "^5.2.11"
   },
   "dependencies": {
     "@react-email/components": "1.0.10",
@@ -10,5 +11,23 @@
   },
   "scripts": {
     "email:dev": "email dev"
+  },
+  "name": "email-newletters",
+  "version": "1.0.0",
+  "description": "A modular HTML email template system for building client newsletters and campaigns. Templates use table-based layouts, inline CSS, and Outlook VML for cross-client compatibility.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/le-koj/email-newletters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/le-koj/email-newletters/issues"
+  },
+  "homepage": "https://github.com/le-koj/email-newletters#readme",
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }
