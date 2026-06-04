@@ -1,19 +1,23 @@
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Editor / tooling (local)
 *.swp
 *.swo
 *~
+.idea/
+.vscode/*.code-workspace
 
 # Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Environment & secrets (if you add build/deploy tooling later)
+# Environment & secrets
 .env
 .env.*
 !.env.example
@@ -21,24 +25,40 @@ yarn-error.log*
 # Dependencies
 node_modules/
 
-# Node / npm
+# Node / package managers
 .npm
 .yarn/
 .pnpm-store/
+.pnp.*
+.yarn-integrity
 
-# Build output
+# Build output (general)
 dist/
 build/
+out/
 .cache/
 
-# React Email / Next.js preview
+# React Email (local preview + export)
+.react-email/
 .next/
+
+# MJML (compiled HTML preview + Babel lib/ output)
+mjml-emails/**/lib/
+mjml-emails/**/index.html
 
 # TypeScript
 *.tsbuildinfo
 
+# Linters / formatters (cache)
+.eslintcache
+.prettiercache
+
 # Test coverage
 coverage/
+
+# Archives / temp (local exports)
+*.tmp
+*.bak
 
 # Python (if you add scripts later)
 .venv/
