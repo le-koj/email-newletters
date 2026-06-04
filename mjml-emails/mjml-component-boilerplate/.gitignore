@@ -8,3 +8,4 @@ node_modules/
 # Gulp/Babel compile output (do not commit)
 lib/
 index.html
+northbridge.html

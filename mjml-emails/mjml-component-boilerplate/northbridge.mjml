@@ -1,0 +1,23 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section background-color="#FFFFFF" padding="80px 40px 0">
+      <mj-column>
+        <mj-text font-size="14px" color="#9CA3AF" align="center">
+          Email content area
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-northbridge-footer />
+  </mj-body>
+</mjml>

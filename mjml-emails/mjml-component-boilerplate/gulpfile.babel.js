@@ -33,16 +33,22 @@ const compile = () => {
         registerComponent(require(fullPath).default)
       })
 
-      fs.readFile(path.normalize('./index.mjml'), 'utf8', (err, data) => {
-        if (err) throw err
+      const mjmlEntries = fs
+        .readdirSync(process.cwd())
+        .filter((file) => file.endsWith('.mjml'))
+
+      mjmlEntries.forEach((file) => {
+        const inputPath = path.normalize(`./${file}`)
+        const outputPath = path.normalize(`./${file.replace(/\.mjml$/, '.html')}`)
+        const data = fs.readFileSync(inputPath, 'utf8')
         const result = mjml2html(data)
         if (result.errors && result.errors.length) {
           result.errors.forEach((e) => {
             log.error(e.formattedMessage || e.message)
           })
         }
-        fs.writeFileSync(path.normalize('./index.html'), result.html)
-        log.info('Compiled index.mjml → index.html')
+        fs.writeFileSync(outputPath, result.html)
+        log.info(`Compiled ${file} → ${path.basename(outputPath)}`)
       })
     })
 }
@@ -51,5 +57,8 @@ gulp.task('build', compile)
 
 gulp.task('watch', () => {
   compile()
-  return watch([path.normalize('components/**/*.js'), path.normalize('index.mjml')], compile)
+  return watch(
+    [path.normalize('components/**/*.js'), path.normalize('*.mjml')],
+    compile,
+  )
 })
