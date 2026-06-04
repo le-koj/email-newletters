@@ -21,8 +21,8 @@
     "url": "git+https://github.com/le-koj/email-newletters.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Le Koj",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/le-koj/email-newletters/issues"
   },
