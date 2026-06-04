@@ -15,5 +15,6 @@
     <mj-lunara-hero />
     <mj-lunara-feature />
     <mj-lunara-benefits />
+    <mj-lunara-footer />
   </mj-body>
 </mjml>
