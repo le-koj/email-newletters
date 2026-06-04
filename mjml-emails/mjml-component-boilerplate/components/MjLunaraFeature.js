@@ -33,17 +33,6 @@ export default class MjLunaraFeature extends BodyComponent {
     this.cssId = Math.floor(Math.random() * 10000) + 1
   }
 
-  static headStyle = (breakpoint) => `
-    @media only screen and (max-width:${breakpoint}) {
-      div[class*="lunara-feature-content-"] {
-        padding: 24px 20px !important;
-      }
-      .lunara-feature-body div {
-        font-size: 15px !important;
-      }
-    }
-  `
-
   componentHeadStyle = () => {
     const imageUrl = this.getAttribute('image-src')
     const radius = this.getAttribute('image-border-radius')
@@ -80,9 +69,29 @@ export default class MjLunaraFeature extends BodyComponent {
         line-height: 1.6 !important;
       }
       @media only screen and (max-width:480px) {
-        ${imageSelector} > table > tbody > tr > td,
-        ${contentSelector} > table > tbody > tr > td {
+        div.lunara-feature-section > table > tbody > tr > td {
+          padding: 24px 20px 0 !important;
+        }
+        ${imageSelector} > table > tbody > tr > td {
           min-height: 200px !important;
+        }
+        ${contentSelector} > table,
+        ${contentSelector} > table > tbody > tr,
+        ${contentSelector} > table > tbody > tr > td {
+          min-height: 0 !important;
+          height: auto !important;
+        }
+        ${contentSelector} > table > tbody > tr > td {
+          padding: 20px 20px 8px !important;
+        }
+        ${contentSelector} .lunara-feature-body div {
+          font-size: 15px !important;
+        }
+        div.lunara-feature-divider-bottom > table > tbody > tr > td {
+          padding: 0 20px !important;
+        }
+        div.lunara-feature-divider-bottom table table table td {
+          padding: 8px 0 16px !important;
         }
       }
     `
@@ -199,7 +208,13 @@ export default class MjLunaraFeature extends BodyComponent {
             </mj-text>
           </mj-column>
         </mj-section>
-        <mj-section ${dividerSectionAttrs}>
+        <mj-section
+          ${this.htmlAttributes({
+      'background-color': bg,
+      padding: dividerPadding,
+      'css-class': 'lunara-feature-divider-section lunara-feature-divider-bottom',
+    })}
+        >
           <mj-column>
             <mj-divider ${dividerAttrs} />
           </mj-column>
