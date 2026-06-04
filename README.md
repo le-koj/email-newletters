@@ -45,8 +45,8 @@ Custom components live in `mjml-emails/mjml-component-boilerplate/`. They are wr
 | Brand header | `<mj-lunara-header />` | Done |
 | Hero | `<mj-lunara-hero />` | Done |
 | Feature split | `<mj-lunara-feature />` | Done |
-| Benefits grid | `<mj-lunara-benefits />` | Planned |
-| Footer | `<mj-lunara-footer />` | Planned |
+| Benefits grid | `<mj-lunara-benefits />` | Done |
+| Footer | `<mj-lunara-footer />` | Done |
 
 Example assembly (`mjml-emails/mjml-component-boilerplate/index.mjml`):
 
