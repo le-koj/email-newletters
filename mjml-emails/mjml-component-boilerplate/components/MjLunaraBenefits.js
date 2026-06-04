@@ -44,12 +44,18 @@ export default class MjLunaraBenefits extends BodyComponent {
     }
     @media only screen and (max-width:480px) {
       div.lunara-benefits-section > table > tbody > tr > td {
-        padding: 32px 20px !important;
+        padding: 32px 0 48px !important;
       }
       div.lunara-benefits-column {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 !important;
+      }
+      div.lunara-benefits-column > table > tbody > tr > td {
+        padding: 0 24px !important;
+      }
+      div.lunara-benefits-column-2 > table > tbody > tr > td,
+      div.lunara-benefits-column-3 > table > tbody > tr > td {
+        padding-top: 32px !important;
       }
       div.lunara-benefits-column table {
         width: 100% !important;
@@ -62,10 +68,6 @@ export default class MjLunaraBenefits extends BodyComponent {
       div.lunara-benefits-column .lunara-benefits-icon img {
         width: ${mobileIconWidth} !important;
         max-width: ${mobileIconWidth} !important;
-      }
-      div.lunara-benefits-column-2,
-      div.lunara-benefits-column-3 {
-        padding-top: 32px !important;
       }
     }
   `
