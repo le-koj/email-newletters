@@ -11,13 +11,14 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-section background-color="#FFFFFF" padding="80px 40px 0">
+    <mj-section background-color="#FFFFFF" padding="48px 40px 0">
       <mj-column>
         <mj-text font-size="14px" color="#9CA3AF" align="center">
           Email content area
         </mj-text>
       </mj-column>
     </mj-section>
+    <mj-northbridge-highlights />
     <mj-northbridge-footer />
   </mj-body>
 </mjml>
