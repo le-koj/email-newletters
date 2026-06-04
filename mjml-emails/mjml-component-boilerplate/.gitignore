@@ -1,0 +1,10 @@
+# Matches parent repo — kept for standalone clone of this boilerplate
+
+.DS_Store
+*.log
+
+node_modules/
+
+# Gulp/Babel compile output (do not commit)
+lib/
+index.html
