@@ -13,5 +13,6 @@
   <mj-body>
     <mj-lunara-header />
     <mj-lunara-hero />
+    <mj-lunara-feature />
   </mj-body>
 </mjml>
