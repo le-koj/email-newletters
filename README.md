@@ -3,7 +3,7 @@
 A modular email template system for building client newsletters and campaigns. The repo supports multiple authoring approaches:
 
 - **HTML templates** (`email-templates/`) — hand-built, table-based layouts with inline CSS and Outlook VML
-- **MJML + custom components** (`mjml-emails/`) — componentized MJML with a Gulp build pipeline (Lunara and Northbridge Brief campaigns)
+- **MJML + custom components** (`mjml-emails/`) — componentized MJML with a Gulp build pipeline (Lunara, Northbridge Brief, and Luma Botanics campaigns)
 - **React Email** (`emails/`) — React components with a local preview server
 
 All approaches target the same constraints: table layouts where needed, inline CSS, ~600px max width, and tested rendering in major clients.
@@ -23,14 +23,18 @@ All approaches target the same constraints: table layouts where needed, inline C
 ├── mjml-emails/                  # MJML sources & custom components
 │   └── mjml-component-boilerplate/
 │       ├── components/           # Custom MJML components (source)
-│       ├── resources/images/northbridge/  # Northbridge assets & icons
+│       ├── resources/images/
+│       │   ├── luma/             # Luma Botanics assets & icons
+│       │   └── northbridge/      # Northbridge assets & icons
 │       ├── lunara-images/        # Lunara campaign assets (PNG)
 │       ├── index.mjml            # Lunara email assembly
 │       ├── northbridge.mjml      # Northbridge Brief email assembly
+│       ├── luma.mjml             # Luma Botanics email assembly
 │       ├── gulpfile.babel.js     # Compile components + all *.mjml → HTML
 │       ├── lib/                  # Babel output (gitignored)
 │       ├── index.html            # Lunara preview (gitignored)
-│       └── northbridge.html      # Northbridge preview (gitignored)
+│       ├── northbridge.html      # Northbridge preview (gitignored)
+│       └── luma.html             # Luma preview (gitignored)
 ├── emails/                       # React Email templates (.tsx)
 ├── package.json                  # Root deps (React Email, MJML 5)
 └── .gitignore
@@ -38,7 +42,7 @@ All approaches target the same constraints: table layouts where needed, inline C
 
 ## MJML Custom Components
 
-Custom components live in `mjml-emails/mjml-component-boilerplate/`. They are written in JavaScript (extending `mjml-core`’s `BodyComponent`), compiled with Babel into `lib/`, registered at build time, and used in `index.mjml` like native MJML tags.
+Custom components live in `mjml-emails/mjml-component-boilerplate/`. They are written in JavaScript (extending `mjml-core`’s `BodyComponent`), compiled with Babel into `lib/`, registered at build time, and used in top-level `*.mjml` files like native MJML tags. The boilerplate runs **MJML 5** (`mjml@^5.3.0`); compilation is async (`await mjml2html(...)` in the Gulp pipeline).
 
 ### Lunara campaign
 
@@ -89,7 +93,40 @@ Example assembly (`northbridge.mjml`):
 </mjml>
 ```
 
-Boilerplate examples (`MjBasicComponent`, `MjImageText`, `MjLayout`) remain in `components/` for reference.
+### Luma Botanics campaign
+
+| Component | Tag | Description |
+|-----------|-----|-------------|
+| Header | `<mj-luma-header />` | Logo, nav links (Shop, Skin, Bundles, Journal), account + cart icons |
+| Trust bar | `<mj-luma-trust-bar />` | Four-column value props with icon-left layout |
+| Essentials | `<mj-luma-essentials />` | Two product images + eyebrow, heading, body copy, pill CTA |
+
+Assembly: `mjml-emails/mjml-component-boilerplate/luma.mjml` → `luma.html`
+
+Design tokens: white `#FFFFFF`, cream `#F5F2EB`, terracotta `#C08070` / `#B89585`, Inter sans-serif. Assets in `resources/images/luma/`. Mobile breakpoint: `480px`.
+
+Example assembly (`luma.mjml`):
+
+```xml
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Inter, Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-luma-header />
+    <mj-luma-trust-bar />
+    <mj-luma-essentials />
+  </mj-body>
+</mjml>
+```
 
 ### MJML workflow
 
@@ -102,20 +139,20 @@ npm run build    # compile components + every *.mjml → matching .html
 npm start        # watch components/ and *.mjml, rebuild on change
 ```
 
-Open `index.html` (Lunara) or `northbridge.html` (Northbridge) in a browser to preview. Paths are relative to that folder, so run the preview from `mjml-component-boilerplate/` (or use hosted image URLs in production).
+Open `index.html` (Lunara), `northbridge.html` (Northbridge), or `luma.html` (Luma) in a browser to preview. Paths are relative to that folder, so run the preview from `mjml-component-boilerplate/` (or use hosted image URLs in production).
 
 **What gets committed**
 
 | Track | Ignore |
 |-------|--------|
-| `components/*.js`, `*.mjml`, `lunara-images/`, `resources/images/`, config files | `node_modules/`, `lib/`, `index.html`, `northbridge.html` |
+| `components/*.js`, `*.mjml`, `lunara-images/`, `resources/images/`, config files | `node_modules/`, `lib/`, `index.html`, `northbridge.html`, `luma.html` |
 
 Gulp auto-registers every file in `components/`; no manual registration step is required.
 
 **Images**
 
 - Use **PNG** for logos and icons in email (not SVG) for client compatibility.
-- Local dev: `lunara-images/…` or `resources/images/northbridge/…`
+- Local dev: `lunara-images/…`, `resources/images/luma/…`, or `resources/images/northbridge/…`
 - Production: replace with CDN/ESP-hosted URLs
 - Photo blocks use CSS background images (works in most clients; Outlook Windows may need `mj-image` + VML fallbacks)
 
@@ -205,7 +242,7 @@ Reusable snippets live in `email-templates/shared-components/`. They use placeho
 | Approach | Preview |
 |----------|---------|
 | HTML templates | Open `index.html` in a browser |
-| MJML | Build in `mjml-component-boilerplate/`, then open `index.html` or `northbridge.html` |
+| MJML | Build in `mjml-component-boilerplate/`, then open `index.html`, `northbridge.html`, or `luma.html` |
 | React Email | `npm run email:dev` |
 
 For send-ready QA, use [Litmus](https://www.litmus.com/) or [Email on Acid](https://www.emailonacid.com/), or your ESP’s preview/send-test tools.
