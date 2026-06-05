@@ -19,6 +19,7 @@
       </mj-column>
     </mj-section>
     <mj-northbridge-highlights />
+    <mj-northbridge-news />
     <mj-northbridge-conversation />
     <mj-northbridge-footer />
   </mj-body>
