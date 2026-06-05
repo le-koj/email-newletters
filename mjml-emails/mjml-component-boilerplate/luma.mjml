@@ -13,5 +13,6 @@
   <mj-body>
     <mj-luma-header />
     <mj-luma-trust-bar />
+    <mj-luma-essentials />
   </mj-body>
 </mjml>
