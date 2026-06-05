@@ -20,6 +20,7 @@ Tutorial: [Creating your own MJML component](https://medium.com/mjml-making-resp
 |------|--------|------------|
 | `index.mjml` | `index.html` | Lunara (`mj-lunara-*`) |
 | `northbridge.mjml` | `northbridge.html` | Northbridge Brief (`mj-northbridge-*`) |
+| `luma.mjml` | `luma.html` | Luma (`mj-luma-*`) |
 
 See the [repo root README](../../README.md) for component tables and design notes.
 
