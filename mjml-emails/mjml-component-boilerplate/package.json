@@ -26,13 +26,17 @@
     "gulp-watch": "^5.0.1"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mjml": "^4.7.1"
   },
   "overrides": {
-    "json5": "^2.2.3"
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.8"
   },
   "resolutions": {
-    "json5": "^2.2.3"
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.8"
   }
 }
