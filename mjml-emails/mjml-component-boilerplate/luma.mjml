@@ -11,6 +11,7 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
+    <mj-luma-header />
     <mj-luma-trust-bar />
   </mj-body>
 </mjml>
