@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/register": "^7.10.4",
+    "@babel/core": "^7.26.10",
+    "@babel/plugin-transform-class-properties": "^7.26.10",
+    "@babel/preset-env": "^7.26.10",
+    "@babel/register": "^7.26.10",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
@@ -27,16 +27,20 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "mjml": "^4.7.1"
+    "mjml": "^5.3.0"
   },
   "overrides": {
     "json5": "^2.2.3",
     "lodash": "^4.17.21",
-    "minimist": "^1.2.8"
+    "minimist": "^1.2.8",
+    "braces": "^3.0.3",
+    "y18n": "^5.0.8"
   },
   "resolutions": {
     "json5": "^2.2.3",
     "lodash": "^4.17.21",
-    "minimist": "^1.2.8"
+    "minimist": "^1.2.8",
+    "braces": "^3.0.3",
+    "y18n": "^5.0.8"
   }
 }

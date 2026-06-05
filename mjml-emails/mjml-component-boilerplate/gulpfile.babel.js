@@ -26,7 +26,7 @@ const compile = () => {
     }))
     .on('error', log)
     .pipe(gulp.dest('lib'))
-    .on('end', () => {
+    .on('end', async () => {
       watchedComponents.forEach(compPath => {
         const fullPath = path.join(process.cwd(), compPath.replace(/^components/, 'lib'))
         delete require.cache[fullPath]
@@ -37,11 +37,11 @@ const compile = () => {
         .readdirSync(process.cwd())
         .filter((file) => file.endsWith('.mjml'))
 
-      mjmlEntries.forEach((file) => {
+      for (const file of mjmlEntries) {
         const inputPath = path.normalize(`./${file}`)
         const outputPath = path.normalize(`./${file.replace(/\.mjml$/, '.html')}`)
         const data = fs.readFileSync(inputPath, 'utf8')
-        const result = mjml2html(data)
+        const result = await mjml2html(data)
         if (result.errors && result.errors.length) {
           result.errors.forEach((e) => {
             log.error(e.formattedMessage || e.message)
@@ -49,7 +49,7 @@ const compile = () => {
         }
         fs.writeFileSync(outputPath, result.html)
         log.info(`Compiled ${file} → ${path.basename(outputPath)}`)
-      })
+      }
     })
 }
 

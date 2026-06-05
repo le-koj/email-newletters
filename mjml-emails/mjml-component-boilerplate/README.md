@@ -50,7 +50,7 @@ import MyComponent from './lib/MyComponent'
 
 registerComponent(MyComponent)
 
-const { html, errors } = mjml2html(mjmlString)
+const { html, errors } = await mjml2html(mjmlString)
 ```
 
 ## Later use of your component
