@@ -11,6 +11,7 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
+    <mj-northbridge-header />
     <mj-northbridge-hero />
     <mj-section background-color="#FFFFFF" padding="48px 40px 0">
       <mj-column>
