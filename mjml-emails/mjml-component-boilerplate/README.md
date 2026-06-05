@@ -1,37 +1,60 @@
 # mjml-component-boilerplate
 
-A boilerplate to quickly get started when creating your own component.  
-
-3 examples can be found in */components*. Each of them introduce new features, so they should be checked in this order : MjBasicComponent, MjImageText, MjLayout.
-
-For more complex examples, have a look at standard MJML components code such as [mj-carousel](https://github.com/mjmlio/mjml/tree/master/packages/mjml-accordion).
+Custom [MJML](https://mjml.io/) components and campaign assemblies for this repo.
 
 ## Getting started
 
-A step-by-step tutorial is available [here](https://medium.com/mjml-making-responsive-email-easy/tutorial-creating-your-own-component-with-mjml-4-1c0e84e97b36).
+1. `npm install` in this directory
+2. Add a component under `components/` (extend `BodyComponent` from `mjml-core`)
+3. Use it in a top-level `*.mjml` file (e.g. `index.mjml`, `northbridge.mjml`)
+4. `npm run build` — Babel compiles `components/` → `lib/`, registers every component, compiles all `*.mjml` → matching `.html`
+5. `npm start` — watch `components/**/*.js` and `*.mjml`, rebuild on change
 
-* Clone the repo
-* `npm install` inside
-* Add your component inside `components` folder
-* Add your component to the registrations in gulpfile.babel.js
-* Use your own component in `index.mjml`
-* `npm run build` to build, or `npm start` if you want to watch recompile on change you make (to your component or to `index.mjml`)
-* The result will be outputted in `index.html`
+Open the generated HTML in a browser from this folder so relative image paths resolve.
 
+Tutorial: [Creating your own MJML component](https://medium.com/mjml-making-responsive-email-easy/tutorial-creating-your-own-component-with-mjml-4-1c0e84e97b36)
 
-## Later use of your component
+## Campaign assemblies
 
-### In Node.js
+| File | Output | Components |
+|------|--------|------------|
+| `index.mjml` | `index.html` | Lunara (`mj-lunara-*`) |
+| `northbridge.mjml` | `northbridge.html` | Northbridge Brief (`mj-northbridge-*`) |
+
+See the [repo root README](../../README.md) for component tables and design notes.
+
+## Example components
+
+Reference implementations in `components/` (study in this order):
+
+- `MjBasicComponent` — minimal custom tag
+- `MjImageText` — image + text layout
+- `MjLayout` — nested MJML structure
+
+## Registration
+
+Gulp auto-registers every file in `components/` after Babel compile. **Do not** edit `gulpfile.babel.js` when adding a new component.
+
+## Git
+
+Committed: `components/*.js`, `*.mjml`, `lunara-images/`, `resources/images/`
+
+Ignored: `node_modules/`, `lib/`, `index.html`, `northbridge.html`
+
+## Using components in Node.js
+
 ```js
 import mjml2html from 'mjml'
 import { registerComponent } from 'mjml-core'
-import MyComponent from './components/MyComponent'
+import MyComponent from './lib/MyComponent'
 
 registerComponent(MyComponent)
 
 const { html, errors } = mjml2html(mjmlString)
 ```
 
-### With the cli
+## Later use of your component
 
-Using custom components with the CLI is not ready yet.
+### With the MJML CLI
+
+Using custom components with the stock CLI is not supported out of the box; use this Gulp pipeline or register components in Node as above.

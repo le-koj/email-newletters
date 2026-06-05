@@ -3,7 +3,7 @@
 A modular email template system for building client newsletters and campaigns. The repo supports multiple authoring approaches:
 
 - **HTML templates** (`email-templates/`) — hand-built, table-based layouts with inline CSS and Outlook VML
-- **MJML + custom components** (`mjml-emails/`) — componentized MJML with a Gulp build pipeline (in progress: Lunara campaign)
+- **MJML + custom components** (`mjml-emails/`) — componentized MJML with a Gulp build pipeline (Lunara and Northbridge Brief campaigns)
 - **React Email** (`emails/`) — React components with a local preview server
 
 All approaches target the same constraints: table layouts where needed, inline CSS, ~600px max width, and tested rendering in major clients.
@@ -21,14 +21,16 @@ All approaches target the same constraints: table layouts where needed, inline C
 │   ├── shared-components/
 │   └── assets/css/
 ├── mjml-emails/                  # MJML sources & custom components
-│   ├── index.mjml                # Root MJML entry (simple/starter)
 │   └── mjml-component-boilerplate/
 │       ├── components/           # Custom MJML components (source)
+│       ├── resources/images/northbridge/  # Northbridge assets & icons
 │       ├── lunara-images/        # Lunara campaign assets (PNG)
 │       ├── index.mjml            # Lunara email assembly
-│       ├── gulpfile.babel.js     # Compile components → HTML
+│       ├── northbridge.mjml      # Northbridge Brief email assembly
+│       ├── gulpfile.babel.js     # Compile components + all *.mjml → HTML
 │       ├── lib/                  # Babel output (gitignored)
-│       └── index.html            # Compiled preview (gitignored)
+│       ├── index.html            # Lunara preview (gitignored)
+│       └── northbridge.html      # Northbridge preview (gitignored)
 ├── emails/                       # React Email templates (.tsx)
 ├── package.json                  # Root deps (React Email, MJML 5)
 └── .gitignore
@@ -38,31 +40,51 @@ All approaches target the same constraints: table layouts where needed, inline C
 
 Custom components live in `mjml-emails/mjml-component-boilerplate/`. They are written in JavaScript (extending `mjml-core`’s `BodyComponent`), compiled with Babel into `lib/`, registered at build time, and used in `index.mjml` like native MJML tags.
 
-### Lunara campaign (in progress)
+### Lunara campaign
 
-| Component | Tag | Status |
-|-----------|-----|--------|
-| Brand header | `<mj-lunara-header />` | Done |
-| Hero | `<mj-lunara-hero />` | Done |
-| Feature split | `<mj-lunara-feature />` | Done |
-| Benefits grid | `<mj-lunara-benefits />` | Done |
-| Footer | `<mj-lunara-footer />` | Done |
+| Component | Tag | Description |
+|-----------|-----|-------------|
+| Brand header | `<mj-lunara-header />` | Centered logo on dark background |
+| Hero | `<mj-lunara-hero />` | Full-width banner image |
+| Feature split | `<mj-lunara-feature />` | Image + copy split layout |
+| Benefits grid | `<mj-lunara-benefits />` | Three-column benefits with icons |
+| Footer | `<mj-lunara-footer />` | Social links, legal, unsubscribe |
 
-Example assembly (`mjml-emails/mjml-component-boilerplate/index.mjml`):
+Assembly: `mjml-emails/mjml-component-boilerplate/index.mjml` → `index.html`
+
+### Northbridge Brief campaign
+
+| Component | Tag | Description |
+|-----------|-----|-------------|
+| Header | `<mj-northbridge-header />` | Preheader, logo/brand, weekly digest + issue date |
+| Hero | `<mj-northbridge-hero />` | 50/50 navy copy + conference room photo |
+| Highlights | `<mj-northbridge-highlights />` | Three-column events, resource, team notes |
+| News | `<mj-northbridge-news />` | Alternating image/content article rows |
+| Conversation | `<mj-northbridge-conversation />` | Dark navy podcast / interview block |
+| Footer | `<mj-northbridge-footer />` | Logo, contact, social, utility links |
+
+Assembly: `mjml-emails/mjml-component-boilerplate/northbridge.mjml` → `northbridge.html` (includes a placeholder content section between hero and highlights for future blocks).
+
+Design tokens: white background, navy `#0C1C36`, accent blue `#1D4ED8` / `#5B8FE0`, Georgia serif headlines, Helvetica/Arial body. Mobile breakpoint: `480px` via `<mj-breakpoint />`.
+
+Example assembly (`northbridge.mjml`):
 
 ```xml
 <mjml>
   <mj-head>
     <mj-breakpoint width="480px" />
-    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
     <mj-attributes>
-      <mj-all font-family="Inter, Helvetica, Arial, sans-serif" />
-      <mj-body background-color="#000000" width="600px" />
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-lunara-header />
-    <mj-lunara-hero />
+    <mj-northbridge-header />
+    <mj-northbridge-hero />
+    <mj-northbridge-highlights />
+    <mj-northbridge-news />
+    <mj-northbridge-conversation />
+    <mj-northbridge-footer />
   </mj-body>
 </mjml>
 ```
@@ -76,25 +98,26 @@ From the boilerplate directory:
 ```bash
 cd mjml-emails/mjml-component-boilerplate
 npm install
-npm run build    # compile components + index.mjml → index.html
-npm start        # watch components/ and index.mjml, rebuild on change
+npm run build    # compile components + every *.mjml → matching .html
+npm start        # watch components/ and *.mjml, rebuild on change
 ```
 
-Open `index.html` in a browser to preview. Paths are relative to that folder, so run the preview from `mjml-component-boilerplate/` (or use hosted image URLs in production).
+Open `index.html` (Lunara) or `northbridge.html` (Northbridge) in a browser to preview. Paths are relative to that folder, so run the preview from `mjml-component-boilerplate/` (or use hosted image URLs in production).
 
 **What gets committed**
 
 | Track | Ignore |
 |-------|--------|
-| `components/*.js`, `index.mjml`, `lunara-images/`, config files | `node_modules/`, `lib/`, `index.html` |
+| `components/*.js`, `*.mjml`, `lunara-images/`, `resources/images/`, config files | `node_modules/`, `lib/`, `index.html`, `northbridge.html` |
 
 Gulp auto-registers every file in `components/`; no manual registration step is required.
 
 **Images**
 
 - Use **PNG** for logos and icons in email (not SVG) for client compatibility.
-- Local dev: paths like `lunara-images/lunara-banner.png`
+- Local dev: `lunara-images/…` or `resources/images/northbridge/…`
 - Production: replace with CDN/ESP-hosted URLs
+- Photo blocks use CSS background images (works in most clients; Outlook Windows may need `mj-image` + VML fallbacks)
 
 Tutorial: [Creating your own MJML component](https://medium.com/mjml-making-responsive-email-easy/tutorial-creating-your-own-component-with-mjml-4-1c0e84e97b36)
 
@@ -175,14 +198,14 @@ Reusable snippets live in `email-templates/shared-components/`. They use placeho
 - **Inline CSS** — Required for Gmail and many clients (MJML inlines automatically)
 - **MSO conditionals** — Use `<!--[if mso]>` for Outlook-specific markup (e.g. VML buttons)
 - **Width** — ~600px content width (MJML `mj-body` default)
-- **Media queries** — Supported in Apple Mail and some clients; Lunara hero uses `headStyle` + `<mj-breakpoint />` for mobile
+- **Media queries** — Supported in Apple Mail and some clients; campaign components use `componentHeadStyle` + `<mj-breakpoint width="480px" />` for mobile
 
 ## Previewing & Testing
 
 | Approach | Preview |
 |----------|---------|
 | HTML templates | Open `index.html` in a browser |
-| MJML | Build `index.html` in `mjml-component-boilerplate/`, then open in a browser |
+| MJML | Build in `mjml-component-boilerplate/`, then open `index.html` or `northbridge.html` |
 | React Email | `npm run email:dev` |
 
 For send-ready QA, use [Litmus](https://www.litmus.com/) or [Email on Acid](https://www.emailonacid.com/), or your ESP’s preview/send-test tools.
