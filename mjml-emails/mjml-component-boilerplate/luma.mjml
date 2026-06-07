@@ -15,6 +15,7 @@
     <mj-luma-hero />
     <mj-luma-trust-bar />
     <mj-luma-essentials />
+    <mj-luma-favorites />
     <mj-luma-ritual />
   </mj-body>
 </mjml>
