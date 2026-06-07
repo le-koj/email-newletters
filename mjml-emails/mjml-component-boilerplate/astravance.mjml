@@ -1,0 +1,12 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#EFEFEF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-astravance-header />
+  </mj-body>
+</mjml>
