@@ -8,5 +8,6 @@
   </mj-head>
   <mj-body>
     <mj-astravance-header />
+    <mj-astravance-updates />
   </mj-body>
 </mjml>
