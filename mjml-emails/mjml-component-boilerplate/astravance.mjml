@@ -9,5 +9,6 @@
   <mj-body>
     <mj-astravance-header />
     <mj-astravance-updates />
+    <mj-astravance-intro />
   </mj-body>
 </mjml>
