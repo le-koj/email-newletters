@@ -1,0 +1,109 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Inter, Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#000000" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <!-- BRAND HEADER (Sleek dark-mode) -->
+    <mj-lunara-header 
+      logo-src="https://yourportfolio.com/assets/images/creator/creator-lab-logo.png"
+      logo-width="180px"
+      logo-alt="The Creator Lab Logo"
+      background-color="#000000"
+    />
+
+    <!-- LAUNCH HERO SECTION -->
+    <mj-lunara-hero 
+      background-color="#000000"
+      background-url="https://yourportfolio.com/assets/images/creator/launch-hero-bg.png"
+      accent-color="#A78BFA"
+      color="#FFFFFF"
+      headline-line1="Newsletter Empire"
+      headline-line2="Is Now Open."
+      subheadline="Learn the exact frameworks to build, grow, and monetize a premium email list to $10,000/month."
+      button-text="Join the Academy"
+      button-href="https://yourportfolio.com/creator/academy"
+      button-background-color="#A78BFA"
+      button-color="#000000"
+      calendar-text="Watch the Launch Webinar >"
+      calendar-href="https://yourportfolio.com/creator/webinar"
+      hashtag="#NewsletterEmpire"
+    />
+
+    <!-- VIDEO TOUR / SCREENSHOT SPLIT -->
+    <mj-lunara-feature 
+      background-color="#000000"
+      accent-color="#A78BFA"
+      color="#FFFFFF"
+      image-src="https://yourportfolio.com/assets/images/creator/portal-screenshot.png"
+      image-alt="Inside the Newsletter Empire Course Portal"
+      body-text="Get instant, lifetime access to 12 step-by-step video modules, our database of high-converting sponsor templates, and monthly live copy auditing sessions."
+      link-text="Take a video tour inside &rarr;"
+      link-href="https://yourportfolio.com/creator/tour"
+    />
+
+    <!-- CORE VALUE GRID -->
+    <mj-lunara-benefits 
+      background-color="#000000"
+      accent-color="#A78BFA"
+      color="#FFFFFF"
+      description-color="#B8B8B8"
+      benefit-1-icon-src="https://yourportfolio.com/assets/images/creator/icons/modules.png"
+      benefit-1-icon-alt="Modules"
+      benefit-1-title="12 Core Modules"
+      benefit-1-description="From landing page copywriting to securing and managing premium newsletter sponsors."
+      benefit-1-link-href="https://yourportfolio.com/creator/curriculum"
+      
+      benefit-2-icon-src="https://yourportfolio.com/assets/images/creator/icons/audits.png"
+      benefit-2-icon-alt="Audits"
+      benefit-2-title="Weekly Live Audits"
+      benefit-2-description="Submit your subject lines and newsletter layout for live face-to-face feedback reviews."
+      benefit-2-link-href="https://yourportfolio.com/creator/audits"
+      
+      benefit-3-icon-src="https://yourportfolio.com/assets/images/creator/icons/discord.png"
+      benefit-3-icon-alt="Community"
+      benefit-3-title="Private Slack Channel"
+      benefit-3-description="Connect and collaborate with other active six-figure creators and email operators daily."
+      benefit-3-link-href="https://yourportfolio.com/creator/community"
+    />
+
+    <!-- PROMOTIONAL CLOSING COPY & DEADLINE -->
+    <mj-section background-color="#000000" padding="24px 24px 48px">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" color="#FFFFFF" padding="0 0 16px 0" line-height="1.2">
+          Enrollment closes Friday at midnight.
+        </mj-text>
+        <mj-text font-size="15px" color="#B8B8B8" line-height="1.6" padding="0 0 24px 0">
+          This is the only cohort we are launching in 2026. The next time we open enrollment, the price will increase by $200. To ensure high-quality feedback sessions, we are capping the cohort at 150 members.
+        </mj-text>
+        <mj-button href="https://yourportfolio.com/creator/academy" background-color="#A78BFA" color="#000000" font-size="15px" font-weight="bold" border-radius="50px" inner-padding="14px 28px" padding="0" align="left">
+          Secure Your Cohort Seat &rarr;
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- PREMIUM LEGAL FOOTER -->
+    <mj-lunara-footer 
+      background-color="#000000"
+      accent-color="#A78BFA"
+      text-color="#9A9A9A"
+      divider-color="#222222"
+      instagram-href="https://instagram.com/creatorlab"
+      youtube-href="https://youtube.com/creatorlab"
+      twitter-href="https://twitter.com/creatorlab"
+      facebook-href="https://facebook.com/creatorlab"
+      disclaimer="Newsletter Empire enrollment is only open twice a year. Access to live workshops is contingent on cohort policies."
+      copyright="© 2026 The Creator Lab. All rights reserved."
+      address="101 Innovation Way, Floor 4, Austin, TX 78701"
+      unsubscribe-statement="If you no longer wish to receive Creator Lab marketing updates, you may"
+      unsubscribe-link-text="unsubscribe here"
+    />
+  </mj-body>
+</mjml>

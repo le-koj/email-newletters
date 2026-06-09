@@ -1,0 +1,121 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <!-- PREDEFINED B2B HEADER -->
+    <mj-northbridge-header 
+      preheader-text="Lesson 3: The 3-2-1 Rule for Async Team Collaboration."
+      view-in-browser-href="https://yourportfolio.com/portfolio/saas-onboarding/web-version"
+      logo-src="https://yourportfolio.com/assets/images/saas/taskhive-logo.png"
+      brand-line-1="TaskHive"
+      brand-line-2="Academy"
+      digest-label="Async Academy"
+      digest-date="June 2026"
+      digest-issue="Lesson 3 of 5"
+      digest-icon-src="https://yourportfolio.com/assets/images/saas/book-icon.png"
+    />
+
+    <!-- HERO SECTION WITH INTENDED TAKEAWAY -->
+    <mj-northbridge-hero 
+      image-src="https://yourportfolio.com/assets/images/saas/onboarding-hero.png"
+      image-alt="Team collaborating remotely with digital workspace tools"
+      title-line-1="Master Async with"
+      title-line-2="The 3-2-1 Rule"
+      body-text="Tired of endless notification pings? Let's explore the async communication framework that helps high-performing teams protect deep focus."
+    />
+
+    <!-- NARRATIVE LESSON TEXT -->
+    <mj-section background-color="#FFFFFF" padding="40px 40px 10px">
+      <mj-column>
+        <mj-text font-family="Georgia, serif" font-size="28px" color="#0C1C36" font-weight="bold" line-height="1.25" padding="0 0 16px 0">
+          The Cost of Context Switching
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="15px" color="#3A3A3A" line-height="1.6" padding="0 0 12px 0">
+          Every time a teammate interrupts you with a Slack DM or an ad-hoc Zoom invite, it takes an average of <strong>23 minutes to regain deep focus</strong>. When this happens all day, team productivity doesn't just dip—it tanks.
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="15px" color="#3A3A3A" line-height="1.6" padding="0 0 24px 0">
+          Async-first companies don't communicate less; they communicate <em>differently</em>. They batch notifications and document decisions in a centralized system. Here is the exact framework we use at TaskHive to keep teams aligned without the friction of real-time distractions.
+        </mj-text>
+        <mj-divider border-color="#E0E0E0" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- THE HIGHLIGHTS GRID IMPLEMENTING THE 3-2-1 RULE -->
+    <mj-northbridge-highlights 
+      background-color="#FFFFFF"
+      accent-color="#1D4ED8"
+      col1-icon-src="https://yourportfolio.com/assets/images/saas/clock-icon.png"
+      col1-eyebrow="3 Hours Limit"
+      event-1="Async SLA: Respond to internal project comments within 3 hours."
+      event-2="Urgent flags: Only use direct notifications for blocking issues."
+      event-3="No guilt: Snooze notifications during designated deep focus."
+      col1-link-text="Set SLAs"
+      col1-link-href="https://yourportfolio.com/portfolio/saas/sla-guide"
+      
+      col2-icon-src="https://yourportfolio.com/assets/images/saas/bell-off-icon.png"
+      col2-eyebrow="2 Batch Cycles"
+      col2-title="Check Pings Twice a Day"
+      col2-body="Schedule specific blocks (e.g., 10 AM and 3 PM) to process updates. Keep TaskHive closed outside those blocks to build momentum."
+      col2-link-text="Configure snooze"
+      col2-link-href="https://yourportfolio.com/portfolio/saas/snooze"
+      
+      col3-icon-src="https://yourportfolio.com/assets/images/saas/hive-icon.png"
+      col3-eyebrow="1 Single Channel"
+      col3-body="Keep discussions linked to task cards. Avoid sidebar DMs where decisions are buried. Document everything in the task timeline."
+      col3-link-text="Task formatting"
+      col3-link-href="https://yourportfolio.com/portfolio/saas/formatting"
+    />
+
+    <!-- VALUE-DRIVEN PRODUCT TIP -->
+    <mj-section background-color="#F9FAFB" padding="32px 40px" border-radius="8px">
+      <mj-column width="100%">
+        <mj-text font-family="Georgia, serif" font-size="22px" color="#0C1C36" font-weight="bold" line-height="1.25" padding="0 0 12px 0">
+          How to Apply This Today in TaskHive
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="15px" color="#3A3A3A" line-height="1.6" padding="0 0 20px 0">
+          The easiest way to start is by activating <strong>Focus Blocks</strong> on your personal profile. TaskHive will auto-reply to colleagues letting them know you're in deep work, and queue all your updates into a single summary digests.
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%">
+        <mj-button href="https://yourportfolio.com/saas/activate-focus" background-color="#1D4ED8" color="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="15px" font-weight="bold" border-radius="4px" inner-padding="12px 24px" padding="0" align="left">
+          Turn on Focus Blocks &rarr;
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- ENGAGING CLOSING SECTION -->
+    <mj-section background-color="#FFFFFF" padding="40px 40px 10px">
+      <mj-column>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="15px" color="#3A3A3A" line-height="1.6" padding="0">
+          In tomorrow's lesson, we'll teach you how to write the perfect "Async Update Card" to replace your weekly team status meetings entirely. Keep an eye on your inbox!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PREDEFINED B2B FOOTER -->
+    <mj-northbridge-footer 
+      logo-src="https://yourportfolio.com/assets/images/saas/taskhive-logo.png"
+      company-name="TaskHive Technologies Ltd."
+      address-line-1="Suite 14, 250 Spencer Street"
+      address-line-2="Melbourne VIC 3000 Australia"
+      phone="+61 3 9000 8888"
+      email="support@taskhive.com"
+      email-href="mailto:support@taskhive.com"
+      website="taskhive.com"
+      website-href="https://taskhive.com"
+      linkedin-href="https://linkedin.com/company/taskhive"
+      twitter-href="https://twitter.com/taskhive"
+      mail-href="mailto:support@taskhive.com"
+      subscription-notice="You are receiving this email because you recently signed up for a TaskHive trial or subscribed to our remote productivity resources."
+    />
+  </mj-body>
+</mjml>

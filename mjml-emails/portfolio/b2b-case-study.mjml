@@ -1,0 +1,157 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <!-- PREDEFINED B2B HEADER -->
+    <mj-northbridge-header 
+      preheader-text="Case Study: How Apex Legal scaled their demo pipeline with FlowSync automation."
+      view-in-browser-href="https://yourportfolio.com/portfolio/b2b-case-study/web-version"
+      logo-src="https://yourportfolio.com/assets/images/b2b/flowsync-logo.png"
+      brand-line-1="FlowSync"
+      brand-line-2="Weekly"
+      digest-label="SaaS Teardown"
+      digest-date="June 2026"
+      digest-issue="Issue #48"
+      digest-icon-src="https://yourportfolio.com/assets/images/b2b/trend-icon.png"
+    />
+
+    <!-- HERO SECTION WITH CASE STUDY SUMMARY -->
+    <mj-northbridge-hero 
+      image-src="https://yourportfolio.com/assets/images/b2b/dashboard-hero.png"
+      image-alt="FlowSync Automation Builder Interface"
+      title-line-1="How Apex Legal Lifted"
+      title-line-2="Demo Bookings by 34%"
+      body-text="A deep dive into the automated qualification framework we built to eliminate lead leakage and capture high-intent prospects in real-time."
+    />
+
+    <!-- DETAILED NARRATIVE BREAKDOWN -->
+    <mj-section background-color="#FFFFFF" padding="40px 40px 20px">
+      <mj-column>
+        <mj-text font-family="Georgia, serif" font-size="28px" color="#0C1C36" font-weight="bold" line-height="1.25" padding="0 0 16px 0">
+          The Problem: 12 Hours a Week Wasted Vetting Leads
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="15px" color="#3A3A3A" line-height="1.6" padding="0 0 12px 0">
+          Before implementing FlowSync, the sales development team at Apex Legal was drowning in manual admin. Every time a user downloaded their "2026 Compliance Checklist", a sales rep had to manually research company size, check LinkedIn for job titles, and copy-paste an email outreach.
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="15px" color="#3A3A3A" line-height="1.6" padding="0 0 24px 0">
+          The result? <strong>Average speed-to-lead hovered around 18 hours.</strong> In modern B2B SaaS, a lead is 10x less likely to respond after just 5 minutes of wait time. High-intent buyers were going cold and signing up for competitor demos instead.
+        </mj-text>
+        <mj-divider border-color="#E0E0E0" border-width="1px" padding="0 0 24px 0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- METRICS CALLOUT GRID -->
+    <mj-section background-color="#FFFFFF" padding="0 40px 40px">
+      <mj-column width="30%" background-color="#F3F4F6" padding="20px 10px" border-radius="6px">
+        <mj-text font-family="Georgia, serif" font-size="36px" color="#1D4ED8" font-weight="bold" align="center" padding="0 0 8px 0">
+          34%
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="13px" color="#0C1C36" font-weight="bold" align="center" padding="0" line-height="1.3">
+          Increase in Demo Bookings
+        </mj-text>
+      </mj-column>
+      <mj-column width="5%"><mj-spacer height="15px" /></mj-column>
+      <mj-column width="30%" background-color="#F3F4F6" padding="20px 10px" border-radius="6px">
+        <mj-text font-family="Georgia, serif" font-size="36px" color="#1D4ED8" font-weight="bold" align="center" padding="0 0 8px 0">
+          90s
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="13px" color="#0C1C36" font-weight="bold" align="center" padding="0" line-height="1.3">
+          Average Response Time
+        </mj-text>
+      </mj-column>
+      <mj-column width="5%"><mj-spacer height="15px" /></mj-column>
+      <mj-column width="30%" background-color="#F3F4F6" padding="20px 10px" border-radius="6px">
+        <mj-text font-family="Georgia, serif" font-size="36px" color="#1D4ED8" font-weight="bold" align="center" padding="0 0 8px 0">
+          12h
+        </mj-text>
+        <mj-text font-family="Helvetica, Arial, sans-serif" font-size="13px" color="#0C1C36" font-weight="bold" align="center" padding="0" line-height="1.3">
+          Saved/Rep Weekly
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CASE STUDY STAGES (THREE-ROW LAYOUT) -->
+    <mj-northbridge-news 
+      background-color="#FFFFFF"
+      accent-color="#1D4ED8"
+      row1-image-src="https://yourportfolio.com/assets/images/b2b/clearbit-flow.png"
+      row1-image-alt="HubSpot and Clearbit Flow Diagram"
+      row1-icon-src="https://yourportfolio.com/assets/images/b2b/gear-icon.png"
+      row1-eyebrow="Phase 1: Enrichment"
+      row1-title="Instant Data Resolution"
+      row1-body="FlowSync listens to webhook events from form submissions. Clearbit API resolves company size and annual recurring revenue (ARR) in less than 3 seconds, storing the clean profile in HubSpot."
+      row1-link-text="View API details"
+      row1-link-href="https://yourportfolio.com/portfolio/b2b/enrichment"
+      
+      row2-image-src="https://yourportfolio.com/assets/images/b2b/routing-flow.png"
+      row2-image-alt="Dynamic Routing Diagram"
+      row2-icon-src=""
+      row2-eyebrow="Phase 2: Routing"
+      row2-title="High-Intent Dynamic Redirects"
+      row2-body="Leads with company size > 50 employees and $1M+ ARR are automatically flagged as 'Enterprise Match' and redirected to a high-intent booking page. General match profiles receive automated value nurture."
+      row2-link-text="Study routing logic"
+      row2-link-href="https://yourportfolio.com/portfolio/b2b/routing"
+      
+      row3-image-src="https://yourportfolio.com/assets/images/b2b/sales-rep.png"
+      row3-image-alt="Sales rep using automation tools"
+      row3-icon-src="https://yourportfolio.com/assets/images/b2b/bell-icon.png"
+      row3-eyebrow="Phase 3: Connection"
+      row3-title="Automated Slack Alerts"
+      row3-body="When an Enterprise Match schedules a demo, the dedicated account executive is alerted via a Slack notification containing enriched buyer data, allowing them to prepare tailored material in minutes."
+      row3-link-text="Read full integration"
+      row3-link-href="https://yourportfolio.com/portfolio/b2b/connection"
+    />
+
+    <!-- BRIEF EXPERT CONVERSATION -->
+    <mj-northbridge-conversation 
+      background-color="#FFFFFF"
+      card-color="#0C1C36"
+      accent-color="#5B8FE0"
+      image-src="https://yourportfolio.com/assets/images/b2b/sarah-jenkins.png"
+      image-alt="Sarah Jenkins, VP of Revenue Operations"
+      eyebrow="Revenue Ops Spotlight"
+      title="“FlowSync turned our demo funnel into a high-speed machine.”"
+      body-text="We sit down with Sarah Jenkins, VP of Revenue Operations at Apex Legal, to discuss how speed-to-lead and data enrichment transformed their sales velocity."
+      link-text="Read the RevOps Q&A"
+      link-href="https://yourportfolio.com/portfolio/b2b/revops-qa"
+    />
+
+    <!-- CTA BLOCK -->
+    <mj-section background-color="#FFFFFF" padding="48px 40px">
+      <mj-column>
+        <mj-text font-family="Georgia, serif" font-size="22px" color="#0C1C36" font-weight="bold" align="center" padding="0 0 16px 0">
+          Ready to eliminate lead leakage?
+        </mj-text>
+        <mj-button href="https://yourportfolio.com/b2b/schedule-demo" background-color="#1D4ED8" color="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-size="15px" font-weight="bold" border-radius="4px" inner-padding="14px 28px" padding="0">
+          Book an Automation Audit &rarr;
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- PREDEFINED B2B FOOTER -->
+    <mj-northbridge-footer 
+      logo-src="https://yourportfolio.com/assets/images/b2b/flowsync-logo.png"
+      company-name="FlowSync Technologies Inc."
+      address-line-1="100 Enterprise Way, Suite 500"
+      address-line-2="San Francisco, CA 94107"
+      phone="+1 (800) 555-0199"
+      email="growth@flowsync.io"
+      email-href="mailto:growth@flowsync.io"
+      website="flowsync.io"
+      website-href="https://flowsync.io"
+      linkedin-href="https://linkedin.com/company/flowsync"
+      twitter-href="https://twitter.com/flowsync"
+      mail-href="mailto:growth@flowsync.io"
+      subscription-notice="You are receiving this email because you downloaded a FlowSync case study or subscribed to our operations digest."
+    />
+  </mj-body>
+</mjml>

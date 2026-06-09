@@ -1,0 +1,135 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Inter, Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <!-- PREMIUM E-COMMERCE HEADER -->
+    <mj-luma-header 
+      logo-src="https://yourportfolio.com/assets/images/d2c/soma-logo.png"
+      logo-alt="Soma Sleep Logo"
+      logo-width="110px"
+      link-color="#1C1C1C"
+      nav-1-text="Shop"
+      nav-1-href="https://yourportfolio.com/d2c/shop"
+      nav-2-text="Science"
+      nav-2-href="https://yourportfolio.com/d2c/science"
+      nav-3-text="Reviews"
+      nav-3-href="https://yourportfolio.com/d2c/reviews"
+      nav-4-text="Journal"
+      nav-4-href="https://yourportfolio.com/d2c/journal"
+      account-icon-src="https://yourportfolio.com/assets/images/d2c/icons/account.png"
+      cart-icon-src="https://yourportfolio.com/assets/images/d2c/icons/cart.png"
+    />
+
+    <!-- HERO SECTION BRINGING PRODUCT AESTHETIC FRONT & CENTER -->
+    <mj-luma-hero 
+      background-color="#FAF8F5"
+      background-url="https://yourportfolio.com/assets/images/d2c/mattress-hero.png"
+      eyebrow-text="SLEEP SCIENCE"
+      eyebrow-color="#8A6C58"
+      headline-line-1="Restorative"
+      headline-line-2="Sleep, Resolved."
+      body-text="Engineered with breathable organic latex, a temperature-regulating gel grid, and pocketed support coils to transform your night."
+      button-text="Explore Soma Hybrid"
+      button-href="https://yourportfolio.com/d2c/soma-hybrid"
+      button-background-color="#8A6C58"
+    />
+
+    <!-- VALUE PROP TRUST BAR -->
+    <mj-luma-trust-bar 
+      background-color="#F4EFEA"
+      title-color="#1C1C1C"
+      description-color="#6B6B6B"
+      item-1-icon-src="https://yourportfolio.com/assets/images/d2c/icons/leaf.png"
+      item-1-icon-alt="Organic Latex"
+      item-1-title="Organic Latex"
+      item-1-description="Breathable comfort layer"
+      
+      item-2-icon-src="https://yourportfolio.com/assets/images/d2c/icons/flask.png"
+      item-2-icon-alt="Cooling Gel Grid"
+      item-2-title="Cooling Gel Grid"
+      item-2-description="Active heat dispersal"
+      
+      item-3-icon-src="https://yourportfolio.com/assets/images/d2c/icons/bed.png"
+      item-3-icon-alt="Pocketed Coils"
+      item-3-title="Pocketed Coils"
+      item-3-description="Targeted alignment"
+      
+      item-4-icon-src="https://yourportfolio.com/assets/images/d2c/icons/shield.png"
+      item-4-icon-alt="100-Night Trial"
+      item-4-title="100-Night Trial"
+      item-4-description="Risk-free home testing"
+    />
+
+    <!-- PRODUCT MATERIALS BREAKDOWN -->
+    <mj-luma-essentials 
+      background-color="#FFFFFF"
+      image-1-src="https://yourportfolio.com/assets/images/d2c/layer-comfort.png"
+      image-1-alt="Soma Sleep Comfort Layer Close-up"
+      image-2-src="https://yourportfolio.com/assets/images/d2c/layer-coils.png"
+      image-2-alt="Soma Sleep Pocketed Support Coils Close-up"
+      eyebrow-text="LAYER BY LAYER"
+      eyebrow-color="#8A6C58"
+      heading-text="Sleep Science Unpacked"
+      body-text="We tested over 40 layer combinations to design the ultimate ergonomic structure. The Soma mattress conforms to your body shape while keeping you perfectly aligned."
+      button-text="See the science"
+      button-href="https://yourportfolio.com/d2c/science"
+      button-background-color="#8A6C58"
+    />
+
+    <!-- RITUAL BUILDER / PERSONALIZATION -->
+    <mj-luma-ritual 
+      background-color="#FFFFFF"
+      content-background-color="#FAF5F0"
+      image-src="https://yourportfolio.com/assets/images/d2c/mattress-profile.png"
+      image-alt="Side view of Soma mattress build"
+      eyebrow-text="PERSONALIZED COMFORT"
+      eyebrow-color="#8A6C58"
+      heading-text="Choose Your Firmness"
+      body-text="Take our quick sleep assessment to discover whether our Luxury Plush or Supportive Firm option best aligns with your sleep posture and body type."
+      button-text="Find my firmness"
+      button-href="https://yourportfolio.com/d2c/quiz"
+      button-background-color="#1C1C1C"
+    />
+
+    <!-- BRAND STORY NARRATIVE SECTION -->
+    <mj-section background-color="#FFFFFF" padding="48px 40px">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="bold" color="#1C1C1C" align="center" padding="0 0 16px 0">
+          Designed to be the last mattress you'll ever need.
+        </mj-text>
+        <mj-text font-size="14px" color="#4A4A4A" align="center" line-height="1.6" padding="0 0 24px 0">
+          Every Soma Hybrid mattress is made to order in our Boston workshop using sustainably sourced materials. We believe luxury shouldn't compromise the planet, which is why we offer a lifetime warranty and fully recyclable components.
+        </mj-text>
+        <mj-button href="https://yourportfolio.com/d2c/shop-all" background-color="#8A6C58" color="#FFFFFF" font-size="14px" font-weight="bold" border-radius="50px" inner-padding="14px 28px" padding="0" align="center">
+          Configure Your Mattress
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sleek Minimialist Black Footer -->
+    <mj-lunara-footer 
+      background-color="#1C1C1C"
+      accent-color="#E0D3C5"
+      text-color="#9A9A9A"
+      divider-color="#333333"
+      instagram-href="https://instagram.com/somasleep"
+      youtube-href="https://youtube.com/somasleep"
+      twitter-href="https://twitter.com/somasleep"
+      facebook-href="https://facebook.com/somasleep"
+      disclaimer="100-night trial valid for new customers on eligible mattress models. White-glove delivery available in continental US only."
+      copyright="© 2026 Soma Sleep Inc. All rights reserved."
+      address="45 Sleepy Hollow Blvd, Suite 200, Boston, MA 02111"
+      unsubscribe-statement="If you'd prefer to sleep on it without our marketing emails, you may"
+      unsubscribe-link-text="unsubscribe here"
+    />
+  </mj-body>
+</mjml>

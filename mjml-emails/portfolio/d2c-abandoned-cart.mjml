@@ -1,0 +1,154 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Inter, Helvetica, Arial, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="600px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <!-- PREMIUM E-COMMERCE HEADER -->
+    <mj-luma-header 
+      logo-src="https://yourportfolio.com/assets/images/d2c/soma-logo.png"
+      logo-alt="Soma Sleep Logo"
+      logo-width="110px"
+      link-color="#1C1C1C"
+      nav-1-text="Shop"
+      nav-1-href="https://yourportfolio.com/d2c/shop"
+      nav-2-text="Science"
+      nav-2-href="https://yourportfolio.com/d2c/science"
+      nav-3-text="Reviews"
+      nav-3-href="https://yourportfolio.com/d2c/reviews"
+      nav-4-text="Journal"
+      nav-4-href="https://yourportfolio.com/d2c/journal"
+      account-icon-src="https://yourportfolio.com/assets/images/d2c/icons/account.png"
+      cart-icon-src="https://yourportfolio.com/assets/images/d2c/icons/cart.png"
+    />
+
+    <!-- CART ABANDONMENT HERO -->
+    <mj-luma-hero 
+      background-color="#FAF8F5"
+      background-url="https://yourportfolio.com/assets/images/d2c/abandoned-hero.png"
+      eyebrow-text="SOMA HYBRID MATTRESS"
+      eyebrow-color="#C18B82"
+      headline-line-1="Your best sleep"
+      headline-line-2="is still waiting."
+      body-text="Great sleep isn't a luxury—it's the foundation of your health, mood, and focus. Take a second look at the Soma Hybrid in your cart."
+      button-text="Resume My Order"
+      button-href="https://yourportfolio.com/d2c/checkout"
+      button-background-color="#1C1C1C"
+    />
+
+    <!-- NARRATIVE STORYTELLING (Why we don't offer discounts) -->
+    <mj-section background-color="#FFFFFF" padding="48px 40px 24px">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" color="#1C1C1C" padding="0 0 16px 0" line-height="1.2">
+          An honest price for honest materials.
+        </mj-text>
+        <mj-text font-size="15px" color="#4A4A4A" line-height="1.65" padding="0 0 16px 0">
+          At Soma Sleep, we don't run fake 20% off sales or inflate our prices just to offer discount codes. We believe in honest, transparent pricing year-round based on the actual cost of premium organic materials and local craftsmanship.
+        </mj-text>
+        <mj-text font-size="15px" color="#4A4A4A" line-height="1.65" padding="0 0 24px 0">
+          We understand that investing in a premium mattress is a significant decision. That is why we remove all the risk on your end with our comprehensive protection guarantees:
+        </mj-text>
+        <mj-divider border-color="#E8E8E8" border-width="1px" padding="0 0 24px 0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- RISK REVERSAL GRID (3 Columns) -->
+    <mj-section background-color="#FFFFFF" padding="0 40px 40px">
+      <mj-column width="30%">
+        <mj-text font-size="16px" font-weight="bold" color="#8A6C58" padding="0 0 8px 0">
+          100-Night Trial
+        </mj-text>
+        <mj-text font-size="13px" color="#6B6B6B" line-height="1.45" padding="0">
+          Sleep on it for over 3 months. If it's not perfect, we'll pick it up and refund you in full.
+        </mj-text>
+      </mj-column>
+      <mj-column width="5%"><mj-spacer height="20px" /></mj-column>
+      <mj-column width="30%">
+        <mj-text font-size="16px" font-weight="bold" color="#8A6C58" padding="0 0 8px 0">
+          10-Year Warranty
+        </mj-text>
+        <mj-text font-size="13px" color="#6B6B6B" line-height="1.45" padding="0">
+          Every Soma Hybrid is built to last. We cover any sagging or structural issues for a full decade.
+        </mj-text>
+      </mj-column>
+      <mj-column width="5%"><mj-spacer height="20px" /></mj-column>
+      <mj-column width="30%">
+        <mj-text font-size="16px" font-weight="bold" color="#8A6C58" padding="0 0 8px 0">
+          Free Delivery
+        </mj-text>
+        <mj-text font-size="13px" color="#6B6B6B" line-height="1.45" padding="0">
+          Our team sets up your new mattress and removes your old one, completely free of charge.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CUSTOMER TESTIMONIALS SECTION -->
+    <mj-section background-color="#FDFBF9" padding="36px 40px">
+      <mj-column>
+        <mj-text font-size="12px" font-weight="bold" color="#8A6C58" letter-spacing="1px" padding="0 0 12px 0" align="center">
+          WHAT SOMA OWNERS ARE SAYING
+        </mj-text>
+        <mj-text font-size="16px" font-style="italic" color="#1C1C1C" line-height="1.5" padding="0 0 10px 0" align="center">
+          “I was hesitant to spend $1,200 on a mattress online. But after 3 weeks on the Soma Hybrid, my lower back pain is completely gone. Best investment I've made in years.”
+        </mj-text>
+        <mj-text font-size="13px" font-weight="bold" color="#6B6B6B" padding="0" align="center">
+          — David K., Verified Buyer
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- RECOMMENDED ADD-ONS (Favorites component) -->
+    <mj-luma-favorites 
+      background-color="#FFFFFF"
+      section-title="COMPLETE YOUR SLEEP RITUAL"
+      section-title-color="#1C1C1C"
+      item-1-image-src="https://yourportfolio.com/assets/images/d2c/sleep-pillow.png"
+      item-1-image-alt="Soma Contour Pillow"
+      item-1-title="Soma Contour Pillow"
+      item-1-description="Ergonomic support for neck alignment."
+      
+      item-2-image-src="https://yourportfolio.com/assets/images/d2c/sheets-eucalyptus.png"
+      item-2-image-alt="Soma Eucalyptus Sheets"
+      item-2-title="Soma Eucalyptus Sheets"
+      item-2-description="Ultra-cooling organic Eucalyptus fibers."
+      
+      item-3-image-src="https://yourportfolio.com/assets/images/d2c/weighted-blanket.png"
+      item-3-image-alt="Soma Weighted Blanket"
+      item-3-title="Soma Weighted Blanket"
+      item-3-description="Deep touch pressure for calm nights."
+    />
+
+    <!-- FINAL CALL TO ACTION -->
+    <mj-section background-color="#FFFFFF" padding="0 40px 48px">
+      <mj-column>
+        <mj-button href="https://yourportfolio.com/d2c/checkout" background-color="#1C1C1C" color="#FFFFFF" font-size="15px" font-weight="bold" border-radius="50px" inner-padding="14px 28px" padding="0" align="center">
+          Claim Your Soma Hybrid &rarr;
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sleek Minimialist Black Footer -->
+    <mj-lunara-footer 
+      background-color="#1C1C1C"
+      accent-color="#E0D3C5"
+      text-color="#9A9A9A"
+      divider-color="#333333"
+      instagram-href="https://instagram.com/somasleep"
+      youtube-href="https://youtube.com/somasleep"
+      twitter-href="https://twitter.com/somasleep"
+      facebook-href="https://facebook.com/somasleep"
+      disclaimer="100-night trial valid for new customers on eligible mattress models. White-glove delivery available in continental US only."
+      copyright="© 2026 Soma Sleep Inc. All rights reserved."
+      address="45 Sleepy Hollow Blvd, Suite 200, Boston, MA 02111"
+      unsubscribe-statement="If you'd prefer to sleep on it without our marketing emails, you may"
+      unsubscribe-link-text="unsubscribe here"
+    />
+  </mj-body>
+</mjml>
