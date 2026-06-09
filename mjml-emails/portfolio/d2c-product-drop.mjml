@@ -13,7 +13,7 @@
   <mj-body>
     <!-- PREMIUM E-COMMERCE HEADER -->
     <mj-luma-header 
-      logo-src="https://yourportfolio.com/assets/images/d2c/soma-logo.png"
+      logo-src="images/d2c/soma-logo.png"
       logo-alt="Soma Sleep Logo"
       logo-width="110px"
       link-color="#1C1C1C"
@@ -25,14 +25,14 @@
       nav-3-href="https://yourportfolio.com/d2c/reviews"
       nav-4-text="Journal"
       nav-4-href="https://yourportfolio.com/d2c/journal"
-      account-icon-src="https://yourportfolio.com/assets/images/d2c/icons/account.png"
-      cart-icon-src="https://yourportfolio.com/assets/images/d2c/icons/cart.png"
+      account-icon-src="images/d2c/icons/account-icon-removebg.png"
+      cart-icon-src="images/d2c/icons/cart-icon-removebg.png"
     />
 
     <!-- HERO SECTION BRINGING PRODUCT AESTHETIC FRONT & CENTER -->
     <mj-luma-hero 
       background-color="#FAF8F5"
-      background-url="https://yourportfolio.com/assets/images/d2c/mattress-hero.png"
+      background-url="images/d2c/mattress-hero.png"
       eyebrow-text="SLEEP SCIENCE"
       eyebrow-color="#8A6C58"
       headline-line-1="Restorative"
@@ -48,22 +48,22 @@
       background-color="#F4EFEA"
       title-color="#1C1C1C"
       description-color="#6B6B6B"
-      item-1-icon-src="https://yourportfolio.com/assets/images/d2c/icons/leaf.png"
+      item-1-icon-src="images/d2c/icons/leaf-icon-removebg.png"
       item-1-icon-alt="Organic Latex"
       item-1-title="Organic Latex"
       item-1-description="Breathable comfort layer"
       
-      item-2-icon-src="https://yourportfolio.com/assets/images/d2c/icons/flask.png"
+      item-2-icon-src="images/d2c/icons/chem-flask-icon-removebg.png"
       item-2-icon-alt="Cooling Gel Grid"
       item-2-title="Cooling Gel Grid"
       item-2-description="Active heat dispersal"
       
-      item-3-icon-src="https://yourportfolio.com/assets/images/d2c/icons/bed.png"
+      item-3-icon-src="images/d2c/icons/heart-icon-removebg.png"
       item-3-icon-alt="Pocketed Coils"
       item-3-title="Pocketed Coils"
       item-3-description="Targeted alignment"
       
-      item-4-icon-src="https://yourportfolio.com/assets/images/d2c/icons/shield.png"
+      item-4-icon-src="images/d2c/icons/truck-icon-removebg.png"
       item-4-icon-alt="100-Night Trial"
       item-4-title="100-Night Trial"
       item-4-description="Risk-free home testing"
@@ -72,9 +72,9 @@
     <!-- PRODUCT MATERIALS BREAKDOWN -->
     <mj-luma-essentials 
       background-color="#FFFFFF"
-      image-1-src="https://yourportfolio.com/assets/images/d2c/layer-comfort.png"
+      image-1-src="images/d2c/luma-oil.png"
       image-1-alt="Soma Sleep Comfort Layer Close-up"
-      image-2-src="https://yourportfolio.com/assets/images/d2c/layer-coils.png"
+      image-2-src="images/d2c/luma-cream.png"
       image-2-alt="Soma Sleep Pocketed Support Coils Close-up"
       eyebrow-text="LAYER BY LAYER"
       eyebrow-color="#8A6C58"
@@ -89,7 +89,7 @@
     <mj-luma-ritual 
       background-color="#FFFFFF"
       content-background-color="#FAF5F0"
-      image-src="https://yourportfolio.com/assets/images/d2c/mattress-profile.png"
+      image-src="images/d2c/luma-product.png"
       image-alt="Side view of Soma mattress build"
       eyebrow-text="PERSONALIZED COMFORT"
       eyebrow-color="#8A6C58"

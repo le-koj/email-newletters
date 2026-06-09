@@ -13,7 +13,7 @@
   <mj-body>
     <!-- BRAND HEADER (Sleek dark-mode) -->
     <mj-lunara-header 
-      logo-src="https://yourportfolio.com/assets/images/creator/creator-lab-logo.png"
+      logo-src="images/creator/creator-lab-logo.png"
       logo-width="180px"
       logo-alt="The Creator Lab Logo"
       background-color="#000000"
@@ -22,7 +22,7 @@
     <!-- LAUNCH HERO SECTION -->
     <mj-lunara-hero 
       background-color="#000000"
-      background-url="https://yourportfolio.com/assets/images/creator/launch-hero-bg.png"
+      background-url="images/creator/launch-hero-bg.png"
       accent-color="#A78BFA"
       color="#FFFFFF"
       headline-line1="Newsletter Empire"
@@ -42,7 +42,7 @@
       background-color="#000000"
       accent-color="#A78BFA"
       color="#FFFFFF"
-      image-src="https://yourportfolio.com/assets/images/creator/portal-screenshot.png"
+      image-src="images/creator/lunara-lifestyle-img.png"
       image-alt="Inside the Newsletter Empire Course Portal"
       body-text="Get instant, lifetime access to 12 step-by-step video modules, our database of high-converting sponsor templates, and monthly live copy auditing sessions."
       link-text="Take a video tour inside &rarr;"
@@ -55,19 +55,19 @@
       accent-color="#A78BFA"
       color="#FFFFFF"
       description-color="#B8B8B8"
-      benefit-1-icon-src="https://yourportfolio.com/assets/images/creator/icons/modules.png"
+      benefit-1-icon-src="images/creator/icons/star-icon-removebg.png"
       benefit-1-icon-alt="Modules"
       benefit-1-title="12 Core Modules"
       benefit-1-description="From landing page copywriting to securing and managing premium newsletter sponsors."
       benefit-1-link-href="https://yourportfolio.com/creator/curriculum"
       
-      benefit-2-icon-src="https://yourportfolio.com/assets/images/creator/icons/audits.png"
+      benefit-2-icon-src="images/creator/icons/trade-in-icon-removebg.png"
       benefit-2-icon-alt="Audits"
       benefit-2-title="Weekly Live Audits"
       benefit-2-description="Submit your subject lines and newsletter layout for live face-to-face feedback reviews."
       benefit-2-link-href="https://yourportfolio.com/creator/audits"
       
-      benefit-3-icon-src="https://yourportfolio.com/assets/images/creator/icons/discord.png"
+      benefit-3-icon-src="images/creator/icons/truck-icon-removebg.png"
       benefit-3-icon-alt="Community"
       benefit-3-title="Private Slack Channel"
       benefit-3-description="Connect and collaborate with other active six-figure creators and email operators daily."

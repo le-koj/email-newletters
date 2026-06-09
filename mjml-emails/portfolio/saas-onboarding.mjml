@@ -15,18 +15,18 @@
     <mj-northbridge-header 
       preheader-text="Lesson 3: The 3-2-1 Rule for Async Team Collaboration."
       view-in-browser-href="https://yourportfolio.com/portfolio/saas-onboarding/web-version"
-      logo-src="https://yourportfolio.com/assets/images/saas/taskhive-logo.png"
+      logo-src="images/saas/taskhive-logo.png"
       brand-line-1="TaskHive"
       brand-line-2="Academy"
       digest-label="Async Academy"
       digest-date="June 2026"
       digest-issue="Lesson 3 of 5"
-      digest-icon-src="https://yourportfolio.com/assets/images/saas/book-icon.png"
+      digest-icon-src="images/saas/icons/book-icon-removebg.png"
     />
 
     <!-- HERO SECTION WITH INTENDED TAKEAWAY -->
     <mj-northbridge-hero 
-      image-src="https://yourportfolio.com/assets/images/saas/onboarding-hero.png"
+      image-src="images/saas/onboarding-hero.png"
       image-alt="Team collaborating remotely with digital workspace tools"
       title-line-1="Master Async with"
       title-line-2="The 3-2-1 Rule"
@@ -53,7 +53,7 @@
     <mj-northbridge-highlights 
       background-color="#FFFFFF"
       accent-color="#1D4ED8"
-      col1-icon-src="https://yourportfolio.com/assets/images/saas/clock-icon.png"
+      col1-icon-src="images/saas/icons/calendar-removebg.png"
       col1-eyebrow="3 Hours Limit"
       event-1="Async SLA: Respond to internal project comments within 3 hours."
       event-2="Urgent flags: Only use direct notifications for blocking issues."
@@ -61,14 +61,14 @@
       col1-link-text="Set SLAs"
       col1-link-href="https://yourportfolio.com/portfolio/saas/sla-guide"
       
-      col2-icon-src="https://yourportfolio.com/assets/images/saas/bell-off-icon.png"
+      col2-icon-src="images/saas/icons/doc-removebg.png"
       col2-eyebrow="2 Batch Cycles"
       col2-title="Check Pings Twice a Day"
       col2-body="Schedule specific blocks (e.g., 10 AM and 3 PM) to process updates. Keep TaskHive closed outside those blocks to build momentum."
       col2-link-text="Configure snooze"
       col2-link-href="https://yourportfolio.com/portfolio/saas/snooze"
       
-      col3-icon-src="https://yourportfolio.com/assets/images/saas/hive-icon.png"
+      col3-icon-src="images/saas/icons/team-removebg.png"
       col3-eyebrow="1 Single Channel"
       col3-body="Keep discussions linked to task cards. Avoid sidebar DMs where decisions are buried. Document everything in the task timeline."
       col3-link-text="Task formatting"
@@ -103,7 +103,7 @@
 
     <!-- PREDEFINED B2B FOOTER -->
     <mj-northbridge-footer 
-      logo-src="https://yourportfolio.com/assets/images/saas/taskhive-logo.png"
+      logo-src="images/saas/taskhive-logo.png"
       company-name="TaskHive Technologies Ltd."
       address-line-1="Suite 14, 250 Spencer Street"
       address-line-2="Melbourne VIC 3000 Australia"
