@@ -320,6 +320,7 @@ export default class MjNorthbridgeFooter extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const topDividerAttrs = this.htmlAttributes({

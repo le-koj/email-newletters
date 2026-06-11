@@ -262,6 +262,7 @@ export default class MjNorthbridgeHeader extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const headerSectionAttrs = this.htmlAttributes({

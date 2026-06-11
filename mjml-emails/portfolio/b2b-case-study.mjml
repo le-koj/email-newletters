@@ -28,13 +28,15 @@
     <mj-northbridge-hero 
       image-src="images/b2b/dashboard-hero.png"
       image-alt="FlowSync Automation Builder Interface"
+      image-mobile-ratio="100%"
+      content-padding="10px 36px"
       title-line-1="How Apex Legal Lifted"
       title-line-2="Demo Bookings by 34%"
       body-text="A deep dive into the automated qualification framework we built to eliminate lead leakage and capture high-intent prospects in real-time."
     />
 
     <!-- DETAILED NARRATIVE BREAKDOWN -->
-    <mj-section background-color="#FFFFFF" padding="40px 40px 20px">
+    <mj-section background-color="#FFFFFF" padding="20px 40px 16px">
       <mj-column>
         <mj-text font-family="Georgia, serif" font-size="28px" color="#0C1C36" font-weight="bold" line-height="1.25" padding="0 0 16px 0">
           The Problem: 12 Hours a Week Wasted Vetting Leads
@@ -50,7 +52,7 @@
     </mj-section>
 
     <!-- METRICS CALLOUT GRID -->
-    <mj-section background-color="#FFFFFF" padding="0 40px 40px">
+    <mj-section background-color="#FFFFFF" padding="0 40px 20px">
       <mj-column width="30%" background-color="#F3F4F6" padding="20px 10px" border-radius="6px">
         <mj-text font-family="Georgia, serif" font-size="36px" color="#1D4ED8" font-weight="bold" align="center" padding="0 0 8px 0">
           34%
@@ -83,16 +85,17 @@
     <mj-northbridge-news 
       background-color="#FFFFFF"
       accent-color="#1D4ED8"
-      row1-image-src="images/b2b/northbridge-columns.png"
+      padding="20px 16px"
+      row1-image-src="images/b2b/flowsync-int.png"
       row1-image-alt="HubSpot and Clearbit Flow Diagram"
-      row1-icon-src="images/b2b/icons/scale-icon-removebg.png"
+      row1-icon-src="images/b2b/icons/enrichment-logo-removebg.png"
       row1-eyebrow="Phase 1: Enrichment"
       row1-title="Instant Data Resolution"
       row1-body="FlowSync listens to webhook events from form submissions. Clearbit API resolves company size and annual recurring revenue (ARR) in less than 3 seconds, storing the clean profile in HubSpot."
       row1-link-text="View API details"
       row1-link-href="https://yourportfolio.com/portfolio/b2b/enrichment"
       
-      row2-image-src="images/b2b/northbridge-harper.png"
+      row2-image-src="images/b2b/flowsync-routing.png"
       row2-image-alt="Dynamic Routing Diagram"
       row2-icon-src=""
       row2-eyebrow="Phase 2: Routing"
@@ -101,9 +104,9 @@
       row2-link-text="Study routing logic"
       row2-link-href="https://yourportfolio.com/portfolio/b2b/routing"
       
-      row3-image-src="images/b2b/northbridge-city.png"
+      row3-image-src="images/b2b/flowsync-connection.png"
       row3-image-alt="Sales rep using automation tools"
-      row3-icon-src="images/b2b/icons/trend-icon-removebg.png"
+      row3-icon-src="images/b2b/icons/conection-icon-removebg.png"
       row3-eyebrow="Phase 3: Connection"
       row3-title="Automated Slack Alerts"
       row3-body="When an Enterprise Match schedules a demo, the dedicated account executive is alerted via a Slack notification containing enriched buyer data, allowing them to prepare tailored material in minutes."
@@ -116,6 +119,7 @@
       background-color="#FFFFFF"
       card-color="#0C1C36"
       accent-color="#5B8FE0"
+      icon-src=""
       image-src="images/b2b/northbridge-professional.png"
       image-alt="Sarah Jenkins, VP of Revenue Operations"
       eyebrow="Revenue Ops Spotlight"
@@ -126,7 +130,7 @@
     />
 
     <!-- CTA BLOCK -->
-    <mj-section background-color="#FFFFFF" padding="48px 40px">
+    <mj-section background-color="#FFFFFF" padding="20px 40px 40px">
       <mj-column>
         <mj-text font-family="Georgia, serif" font-size="22px" color="#0C1C36" font-weight="bold" align="center" padding="0 0 16px 0">
           Ready to eliminate lead leakage?

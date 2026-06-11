@@ -155,7 +155,7 @@ export default class MjNorthbridgeNews extends BodyComponent {
     }
     @media only screen and (max-width:480px) {
       div.northbridge-news-row > table > tbody > tr > td {
-        padding: 0 !important;
+        padding: 20px 0 !important;
       }
       div.northbridge-news-image {
         width: 100% !important;
@@ -410,6 +410,7 @@ export default class MjNorthbridgeNews extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const rows = this.rowConfig()

@@ -128,8 +128,18 @@ export default class MjNorthbridgeConversation extends BodyComponent {
     const circleSize = this.getAttribute('icon-circle-size')
     const eyebrowSize = this.getAttribute('eyebrow-font-size')
 
+    const eyebrowText = `
+      <span style="font-family:Helvetica,Arial,sans-serif;font-size:${eyebrowSize};font-weight:700;letter-spacing:1px;line-height:1.3;text-transform:uppercase;color:${accent};">
+        ${this.getAttribute('eyebrow')}
+      </span>
+    `
+
+    if (!iconSrc) {
+      return eyebrowText
+    }
+
     return `
-      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
           <td valign="middle" width="${circleSize}">
             <table role="presentation" border="0" cellpadding="0" cellspacing="0">
@@ -152,9 +162,7 @@ export default class MjNorthbridgeConversation extends BodyComponent {
             </table>
           </td>
           <td valign="middle" style="padding-left:14px;">
-            <span style="font-family:Helvetica,Arial,sans-serif;font-size:${eyebrowSize};font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">
-              ${this.getAttribute('eyebrow')}
-            </span>
+            ${eyebrowText}
           </td>
         </tr>
       </table>

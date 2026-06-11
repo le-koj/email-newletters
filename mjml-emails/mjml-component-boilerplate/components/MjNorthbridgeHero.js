@@ -19,6 +19,7 @@ export default class MjNorthbridgeHero extends BodyComponent {
     'image-src': 'string',
     'image-alt': 'string',
     'image-min-height': 'unit(px)',
+    'image-mobile-ratio': 'unit(%)',
     'title-line-1': 'string',
     'title-line-2': 'string',
     'title-font-size': 'unit(px)',
@@ -38,6 +39,7 @@ export default class MjNorthbridgeHero extends BodyComponent {
   componentHeadStyle = () => {
     const imageUrl = this.getAttribute('image-src')
     const minHeight = this.getAttribute('image-min-height')
+    const mobileRatio = this.getAttribute('image-mobile-ratio')
     const imageSelector = `.northbridge-hero-image-${this.cssId}`
     const contentSelector = `.northbridge-hero-content-${this.cssId}`
 
@@ -61,23 +63,15 @@ export default class MjNorthbridgeHero extends BodyComponent {
       ${contentSelector} > table {
         height: 100% !important;
       }
-      div.northbridge-hero-section > table > tbody > tr > td {
-        direction: rtl !important;
-        text-align: right !important;
-      }
-      div.northbridge-hero-section .northbridge-hero-image,
-      div.northbridge-hero-section .northbridge-hero-content {
-        direction: ltr !important;
-        text-align: left !important;
-      }
       @media only screen and (max-width:480px) {
         div.northbridge-hero-section > table > tbody > tr > td {
           padding: 0 !important;
-          direction: ltr !important;
           text-align: center !important;
         }
         ${imageSelector} > table > tbody > tr > td {
-          min-height: 220px !important;
+          height: 0 !important;
+          min-height: 0 !important;
+          padding: ${mobileRatio} 0 0 0 !important;
         }
         ${contentSelector} > table,
         ${contentSelector} > table > tbody > tr,
@@ -108,6 +102,7 @@ export default class MjNorthbridgeHero extends BodyComponent {
     'image-src': `${IMAGES_BASE}/northbridge-conference-room.png`,
     'image-alt': 'Modern conference room with city skyline view',
     'image-min-height': '280px',
+    'image-mobile-ratio': '75%',
     'title-line-1': 'This Week',
     'title-line-2': 'in Practice',
     'title-font-size': '40px',
@@ -171,12 +166,11 @@ export default class MjNorthbridgeHero extends BodyComponent {
       'css-class': `northbridge-hero-image northbridge-hero-image-${this.cssId}`,
     })
 
+    // Content first in markup so mobile stacks content → image;
+    // desktop keeps content left, image right.
     return this.renderMJML(`
       <mj-wrapper ${wrapperAttrs}>
         <mj-section ${sectionAttrs}>
-          <mj-column ${imageColumnAttrs}>
-            <mj-spacer height="1px" />
-          </mj-column>
           <mj-column ${contentColumnAttrs}>
             <mj-text padding="0 0 0 0" align="left">
               ${this.renderTitleBlock()}
@@ -186,6 +180,9 @@ export default class MjNorthbridgeHero extends BodyComponent {
                 ${this.getAttribute('body-text')}
               </div>
             </mj-text>
+          </mj-column>
+          <mj-column ${imageColumnAttrs}>
+            <mj-spacer height="1px" />
           </mj-column>
         </mj-section>
       </mj-wrapper>

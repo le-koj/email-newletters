@@ -18,6 +18,9 @@ const walkSync = (dir, filelist = []) => {
 
 const watchedComponents = walkSync('./components')
 
+// Folders scanned for top-level *.mjml entries; output .html is written next to each input.
+const mjmlDirs = ['.', '../portfolio']
+
 const compile = () => {
   return gulp
     .src(path.normalize('components/**/*.js'))
@@ -33,13 +36,18 @@ const compile = () => {
         registerComponent(require(fullPath).default)
       })
 
-      const mjmlEntries = fs
-        .readdirSync(process.cwd())
-        .filter((file) => file.endsWith('.mjml'))
+      const mjmlEntries = mjmlDirs
+        .filter((dir) => fs.existsSync(dir))
+        .flatMap((dir) =>
+          fs
+            .readdirSync(dir)
+            .filter((file) => file.endsWith('.mjml'))
+            .map((file) => path.join(dir, file)),
+        )
 
       for (const file of mjmlEntries) {
-        const inputPath = path.normalize(`./${file}`)
-        const outputPath = path.normalize(`./${file.replace(/\.mjml$/, '.html')}`)
+        const inputPath = path.normalize(file)
+        const outputPath = inputPath.replace(/\.mjml$/, '.html')
         const data = fs.readFileSync(inputPath, 'utf8')
         const result = await mjml2html(data)
         if (result.errors && result.errors.length) {
@@ -48,7 +56,7 @@ const compile = () => {
           })
         }
         fs.writeFileSync(outputPath, result.html)
-        log.info(`Compiled ${file} → ${path.basename(outputPath)}`)
+        log.info(`Compiled ${inputPath} → ${path.basename(outputPath)}`)
       }
     })
 }
@@ -58,7 +66,11 @@ gulp.task('build', compile)
 gulp.task('watch', () => {
   compile()
   return watch(
-    [path.normalize('components/**/*.js'), path.normalize('*.mjml')],
+    [
+      path.normalize('components/**/*.js'),
+      path.normalize('*.mjml'),
+      path.normalize('../portfolio/*.mjml'),
+    ],
     compile,
   )
 })
