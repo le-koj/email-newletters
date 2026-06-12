@@ -26,7 +26,7 @@
 
     <!-- HERO SECTION WITH INTENDED TAKEAWAY -->
     <mj-northbridge-hero 
-      image-src="images/saas/onboarding-hero.png"
+      image-src="images/saas/onboarding.png"
       image-alt="Team collaborating remotely with digital workspace tools"
       title-line-1="Master Async with"
       title-line-2="The 3-2-1 Rule"

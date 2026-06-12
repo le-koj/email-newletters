@@ -50,7 +50,7 @@ export default class MjLumaTrustBar extends BodyComponent {
     }
     @media only screen and (max-width:480px) {
       div.luma-trust-bar-section > table > tbody > tr > td {
-        padding: 0 !important;
+        padding: 10px 20px !important;
       }
       div.luma-trust-bar-col {
         width: 50% !important;
@@ -85,7 +85,7 @@ export default class MjLumaTrustBar extends BodyComponent {
     'icon-gap': '10px',
     'title-font-size': '15px',
     'description-font-size': '11px',
-    padding: '0',
+    padding: '20px 10px',
     'item-1-icon-src': `${ICONS_BASE}/leaf-icon-removebg.png`,
     'item-1-icon-alt': 'Plant-Powered',
     'item-1-title': 'Plant-Powered',
@@ -170,6 +170,7 @@ export default class MjLumaTrustBar extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const sectionAttrs = this.htmlAttributes({

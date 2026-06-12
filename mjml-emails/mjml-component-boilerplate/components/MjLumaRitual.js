@@ -17,6 +17,7 @@ export default class MjLumaRitual extends BodyComponent {
     'image-column-width': 'unit(px,%)',
     'image-src': 'string',
     'image-alt': 'string',
+    'image-min-height': 'unit(px)',
     'eyebrow-text': 'string',
     'eyebrow-color': 'color',
     'eyebrow-font-size': 'unit(px)',
@@ -40,7 +41,18 @@ export default class MjLumaRitual extends BodyComponent {
     'button-padding': 'unit(px){1,4}',
   }
 
-  componentHeadStyle = () => `
+  constructor(initialDatas = {}) {
+    super(initialDatas)
+    this.cssId = Math.floor(Math.random() * 10000) + 1
+  }
+
+  componentHeadStyle = () => {
+    const imageUrl = this.getAttribute('image-src')
+    const minHeight = this.getAttribute('image-min-height')
+    const imageSelector = `.luma-ritual-image-col-${this.cssId}`
+    const contentSelector = `.luma-ritual-content-col-${this.cssId}`
+
+    return `
     .luma-ritual-eyebrow div,
     .luma-ritual-body div {
       line-height: 1.4 !important;
@@ -48,24 +60,54 @@ export default class MjLumaRitual extends BodyComponent {
     .luma-ritual-heading div {
       line-height: 1.15 !important;
     }
-    .luma-ritual-image img {
-      display: block !important;
+    ${imageSelector} > table,
+    ${imageSelector} > table > tbody > tr,
+    ${imageSelector} > table > tbody > tr > td,
+    ${contentSelector} > table,
+    ${contentSelector} > table > tbody > tr,
+    ${contentSelector} > table > tbody > tr > td {
+      height: 100% !important;
+      min-height: ${minHeight} !important;
+    }
+    ${imageSelector} > table > tbody > tr > td {
+      background-image: url('${imageUrl}') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      padding: 0 !important;
+    }
+    div.luma-ritual-section > table > tbody > tr > td {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    div.luma-ritual-content-col,
+    div.luma-ritual-image-col {
+      direction: ltr !important;
+      text-align: left !important;
     }
     @media only screen and (max-width:480px) {
       div.luma-ritual-section > table > tbody > tr > td {
         padding: 0 !important;
+        direction: ltr !important;
+        text-align: center !important;
       }
       div.luma-ritual-content-col,
       div.luma-ritual-image-col {
         width: 100% !important;
         max-width: 100% !important;
       }
+      ${contentSelector} > table,
+      ${contentSelector} > table > tbody > tr,
+      ${contentSelector} > table > tbody > tr > td {
+        min-height: 0 !important;
+        height: auto !important;
+      }
       div.luma-ritual-content-col > table > tbody > tr > td {
         padding: 32px 24px !important;
         text-align: center !important;
       }
-      div.luma-ritual-image-col > table > tbody > tr > td {
-        padding: 0 !important;
+      ${imageSelector} > table > tbody > tr > td {
+        min-height: 240px !important;
       }
       .luma-ritual-eyebrow div,
       .luma-ritual-heading div,
@@ -78,17 +120,9 @@ export default class MjLumaRitual extends BodyComponent {
       .luma-ritual-button table {
         margin: 0 auto !important;
       }
-      .luma-ritual-image table,
-      .luma-ritual-image td {
-        width: 100% !important;
-      }
-      .luma-ritual-image img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-      }
     }
   `
+  }
 
   static defaultAttributes = {
     'background-color': '#FFFFFF',
@@ -96,8 +130,9 @@ export default class MjLumaRitual extends BodyComponent {
     'font-family': 'Inter, Helvetica, Arial, sans-serif',
     'content-column-width': '50%',
     'image-column-width': '50%',
-    'image-src': `${IMAGES_BASE}/luma-product.png`,
+    'image-src': `${IMAGES_BASE}/luma-product-2.png`,
     'image-alt': 'Luma Botanics cleanser, serum, and moisturizer',
+    'image-min-height': '300px',
     'eyebrow-text': 'MADE FOR YOU',
     'eyebrow-color': '#D4A395',
     'eyebrow-font-size': '11px',
@@ -129,6 +164,7 @@ export default class MjLumaRitual extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const sectionAttrs = this.htmlAttributes({
@@ -142,23 +178,14 @@ export default class MjLumaRitual extends BodyComponent {
       'vertical-align': 'middle',
       'background-color': contentBg,
       padding: this.getAttribute('content-column-padding'),
-      'css-class': 'luma-ritual-content-col',
+      'css-class': `luma-ritual-content-col luma-ritual-content-col-${this.cssId}`,
     })
 
     const imageColAttrs = this.htmlAttributes({
       width: this.getAttribute('image-column-width'),
       'vertical-align': 'middle',
       padding: this.getAttribute('image-column-padding'),
-      'css-class': 'luma-ritual-image-col',
-    })
-
-    const imageAttrs = this.htmlAttributes({
-      src: this.getAttribute('image-src'),
-      alt: this.getAttribute('image-alt'),
-      align: 'center',
-      padding: '0',
-      'fluid-on-mobile': 'true',
-      'css-class': 'luma-ritual-image',
+      'css-class': `luma-ritual-image-col luma-ritual-image-col-${this.cssId}`,
     })
 
     const buttonAttrs = this.htmlAttributes({
@@ -184,6 +211,9 @@ export default class MjLumaRitual extends BodyComponent {
     return this.renderMJML(`
       <mj-wrapper ${wrapperAttrs}>
         <mj-section ${sectionAttrs}>
+          <mj-column ${imageColAttrs}>
+            <mj-spacer height="1px" />
+          </mj-column>
           <mj-column ${contentColAttrs}>
             <mj-text padding="${this.getAttribute('eyebrow-padding')}" align="left" css-class="luma-ritual-eyebrow">
               <div style="font-family:${fontFamily};font-size:${eyebrowSize};font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:${eyebrowColor};">
@@ -203,9 +233,6 @@ export default class MjLumaRitual extends BodyComponent {
             <mj-button ${buttonAttrs}>
               ${this.getAttribute('button-text')}
             </mj-button>
-          </mj-column>
-          <mj-column ${imageColAttrs}>
-            <mj-image ${imageAttrs} />
           </mj-column>
         </mj-section>
       </mj-wrapper>

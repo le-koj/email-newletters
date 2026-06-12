@@ -12,10 +12,11 @@
   </mj-head>
   <mj-body>
     <mj-luma-header />
-    <mj-luma-hero />
-    <mj-luma-trust-bar />
-    <mj-luma-essentials />
+    <mj-luma-hero />    
     <mj-luma-favorites />
     <mj-luma-ritual />
+    <mj-luma-essentials />
+    <mj-luma-trust-bar />
+    <mj-luma-footer />
   </mj-body>
 </mjml>

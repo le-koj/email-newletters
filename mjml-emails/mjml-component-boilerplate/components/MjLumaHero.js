@@ -91,7 +91,7 @@ export default class MjLumaHero extends BodyComponent {
 
   static defaultAttributes = {
     'background-color': '#F9F6F2',
-    'background-url': `${IMAGES_BASE}/luma-hero.png`,
+    'background-url': `${IMAGES_BASE}/luma-hero-2.png`,
     'background-size': 'cover',
     'background-position': 'right center',
     'background-repeat': 'no-repeat',
@@ -139,6 +139,7 @@ export default class MjLumaHero extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const sectionAttrs = this.htmlAttributes({

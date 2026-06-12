@@ -153,7 +153,7 @@
     }
     @media only screen and (max-width:480px) {
       div.luma-trust-bar-section > table > tbody > tr > td {
-        padding: 0 !important;
+        padding: 10px 20px !important;
       }
       div.luma-trust-bar-col {
         width: 50% !important;
@@ -227,24 +227,54 @@
     .luma-ritual-heading div {
       line-height: 1.15 !important;
     }
-    .luma-ritual-image img {
-      display: block !important;
+    .luma-ritual-image-col-1230 > table,
+    .luma-ritual-image-col-1230 > table > tbody > tr,
+    .luma-ritual-image-col-1230 > table > tbody > tr > td,
+    .luma-ritual-content-col-1230 > table,
+    .luma-ritual-content-col-1230 > table > tbody > tr,
+    .luma-ritual-content-col-1230 > table > tbody > tr > td {
+      height: 100% !important;
+      min-height: 300px !important;
+    }
+    .luma-ritual-image-col-1230 > table > tbody > tr > td {
+      background-image: url('images/d2c/personalized-comfort.png') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      padding: 0 !important;
+    }
+    div.luma-ritual-section > table > tbody > tr > td {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    div.luma-ritual-content-col,
+    div.luma-ritual-image-col {
+      direction: ltr !important;
+      text-align: left !important;
     }
     @media only screen and (max-width:480px) {
       div.luma-ritual-section > table > tbody > tr > td {
         padding: 0 !important;
+        direction: ltr !important;
+        text-align: center !important;
       }
       div.luma-ritual-content-col,
       div.luma-ritual-image-col {
         width: 100% !important;
         max-width: 100% !important;
       }
+      .luma-ritual-content-col-1230 > table,
+      .luma-ritual-content-col-1230 > table > tbody > tr,
+      .luma-ritual-content-col-1230 > table > tbody > tr > td {
+        min-height: 0 !important;
+        height: auto !important;
+      }
       div.luma-ritual-content-col > table > tbody > tr > td {
         padding: 32px 24px !important;
         text-align: center !important;
       }
-      div.luma-ritual-image-col > table > tbody > tr > td {
-        padding: 0 !important;
+      .luma-ritual-image-col-1230 > table > tbody > tr > td {
+        min-height: 240px !important;
       }
       .luma-ritual-eyebrow div,
       .luma-ritual-heading div,
@@ -256,15 +286,6 @@
       }
       .luma-ritual-button table {
         margin: 0 auto !important;
-      }
-      .luma-ritual-image table,
-      .luma-ritual-image td {
-        width: 100% !important;
-      }
-      .luma-ritual-image img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
       }
     }
   
@@ -553,7 +574,7 @@
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-hero-section-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="luma-hero-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FAF8F5" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><v:rect style="width:600px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill origin="0.5, 0" position="0.5, 0" src="images/d2c/mattress-hero.png" color="#FAF8F5" type="frame" size="1,1" aspect="atleast" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"><![endif]-->
           
@@ -724,7 +745,7 @@
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-trust-bar-section-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="luma-trust-bar-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#F4EFEA" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
@@ -737,9 +758,9 @@
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
+                 style="direction:ltr;font-size:0px;padding:20px 10px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-trust-bar-col-outlook luma-trust-bar-col-1-outlook" style="vertical-align:top;width:150px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-trust-bar-col-outlook luma-trust-bar-col-1-outlook" style="vertical-align:top;width:145px;" ><![endif]-->
             
       <div
          class="mj-column-per-25 mj-outlook-group-fix luma-trust-bar-col luma-trust-bar-col-1" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -799,7 +820,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="luma-trust-bar-col-outlook luma-trust-bar-col-2-outlook" style="vertical-align:top;width:150px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="luma-trust-bar-col-outlook luma-trust-bar-col-2-outlook" style="vertical-align:top;width:145px;" ><![endif]-->
             
       <div
          class="mj-column-per-25 mj-outlook-group-fix luma-trust-bar-col luma-trust-bar-col-2" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -859,7 +880,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="luma-trust-bar-col-outlook luma-trust-bar-col-3-outlook" style="vertical-align:top;width:150px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="luma-trust-bar-col-outlook luma-trust-bar-col-3-outlook" style="vertical-align:top;width:145px;" ><![endif]-->
             
       <div
          class="mj-column-per-25 mj-outlook-group-fix luma-trust-bar-col luma-trust-bar-col-3" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -919,7 +940,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="luma-trust-bar-col-outlook luma-trust-bar-col-4-outlook" style="vertical-align:top;width:150px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="luma-trust-bar-col-outlook luma-trust-bar-col-4-outlook" style="vertical-align:top;width:145px;" ><![endif]-->
             
       <div
          class="mj-column-per-25 mj-outlook-group-fix luma-trust-bar-col luma-trust-bar-col-4" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -1012,7 +1033,7 @@
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-essentials-section-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="luma-essentials-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
@@ -1260,7 +1281,7 @@
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+                 style="direction:ltr;font-size:0px;padding:0;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-ritual-section-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="luma-ritual-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
@@ -1275,10 +1296,50 @@
               <td
                  style="direction:ltr;font-size:0px;padding:0;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-ritual-content-col-outlook" style="vertical-align:middle;width:300px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="luma-ritual-image-col-outlook luma-ritual-image-col-1230-outlook" style="vertical-align:middle;width:300px;" ><![endif]-->
             
       <div
-         class="mj-column-per-50 mj-outlook-group-fix luma-ritual-content-col" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+         class="mj-column-per-50 mj-outlook-group-fix luma-ritual-image-col luma-ritual-image-col-1230" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+      >
+        <tbody>
+          <tr>
+            <td  style="vertical-align:middle;padding:0;">
+              
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
+      >
+        <tbody>
+          
+              <tr>
+                <td
+                   style="font-size:0px;word-break:break-word;"
+                >
+                  
+      <div
+         style="height:1px;line-height:1px;"
+      >&#8202;</div>
+    
+                </td>
+              </tr>
+            
+        </tbody>
+      </table>
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]></td><td class="luma-ritual-content-col-outlook luma-ritual-content-col-1230-outlook" style="vertical-align:middle;width:300px;" ><![endif]-->
+            
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix luma-ritual-content-col luma-ritual-content-col-1230" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
       >
         
       <table
@@ -1353,58 +1414,6 @@
               >
                 Find my firmness
               </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-                </td>
-              </tr>
-            
-        </tbody>
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]></td><td class="luma-ritual-image-col-outlook" style="vertical-align:middle;width:300px;" ><![endif]-->
-            
-      <div
-         class="mj-column-per-50 mj-outlook-group-fix luma-ritual-image-col" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
-      >
-        
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
-      >
-        <tbody>
-          <tr>
-            <td  style="vertical-align:middle;padding:0;">
-              
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
-      >
-        <tbody>
-          
-              <tr>
-                <td
-                   align="center" class="luma-ritual-image" style="font-size:0px;padding:0;word-break:break-word;"
-                >
-                  
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" class="mj-full-width-mobile"
-      >
-        <tbody>
-          <tr>
-            <td  style="width:300px;" class="mj-full-width-mobile">
-              
-      <img
-         alt="Side view of Soma mattress build" src="images/d2c/personalized-comfort.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"
-      />
-    
             </td>
           </tr>
         </tbody>

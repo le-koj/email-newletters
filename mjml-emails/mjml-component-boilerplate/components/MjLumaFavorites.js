@@ -108,8 +108,8 @@ export default class MjLumaFavorites extends BodyComponent {
     'title-padding': '0 0 6px 0',
     'description-padding': '0',
     padding: '0',
-    'header-padding': '48px 20px 32px',
-    'grid-padding': '0 20px 48px',
+    'header-padding': '24px 20px 32px',
+    'grid-padding': '0 20px 24px',
     'item-1-image-src': `${IMAGES_BASE}/luma-cleanser.png`,
     'item-1-image-alt': 'Calm Soothing Cleanser',
     'item-1-title': 'Calm Soothing Cleanser',
@@ -201,6 +201,7 @@ export default class MjLumaFavorites extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const headerSectionAttrs = this.htmlAttributes({

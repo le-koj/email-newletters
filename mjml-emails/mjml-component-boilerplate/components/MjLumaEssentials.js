@@ -216,6 +216,7 @@ export default class MjLumaEssentials extends BodyComponent {
 
     const wrapperAttrs = this.htmlAttributes({
       'background-color': bg,
+      padding: '0',
     })
 
     const sectionAttrs = this.htmlAttributes({
