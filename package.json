@@ -29,6 +29,7 @@
   "homepage": "https://github.com/le-koj/email-newletters#readme",
   "overrides": {
     "postcss": "^8.5.10",
-    "next": "^16.2.5"
+    "next": "^16.2.5",
+    "esbuild": "^0.28.1"
   }
 }
