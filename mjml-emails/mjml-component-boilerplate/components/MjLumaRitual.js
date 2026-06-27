@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const IMAGES_BASE = 'resources/images/luma'
 
@@ -127,7 +128,7 @@ export default class MjLumaRitual extends BodyComponent {
   static defaultAttributes = {
     'background-color': '#FFFFFF',
     'content-background-color': '#FAF5F0',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'content-column-width': '50%',
     'image-column-width': '50%',
     'image-src': `${IMAGES_BASE}/luma-product-2.png`,
@@ -216,17 +217,17 @@ export default class MjLumaRitual extends BodyComponent {
           </mj-column>
           <mj-column ${contentColAttrs}>
             <mj-text padding="${this.getAttribute('eyebrow-padding')}" align="left" css-class="luma-ritual-eyebrow">
-              <div style="font-family:${fontFamily};font-size:${eyebrowSize};font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:${eyebrowColor};">
+              <div style="${lumaFontStack(fontFamily)}font-size:${eyebrowSize};font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:${eyebrowColor};">
                 ${this.getAttribute('eyebrow-text')}
               </div>
             </mj-text>
             <mj-text padding="${this.getAttribute('heading-padding')}" align="left" css-class="luma-ritual-heading">
-              <div style="font-family:${fontFamily};font-size:${headingSize};font-weight:700;line-height:1.15;color:${headingColor};">
+              <div style="${lumaFontStack(fontFamily)}font-size:${headingSize};font-weight:700;line-height:1.15;color:${headingColor};">
                 ${this.getAttribute('heading-text')}
               </div>
             </mj-text>
             <mj-text padding="${this.getAttribute('body-padding')}" align="left" css-class="luma-ritual-body">
-              <div style="font-family:${fontFamily};font-size:${bodySize};font-weight:400;line-height:1.55;color:${bodyColor};">
+              <div style="${lumaFontStack(fontFamily)}font-size:${bodySize};font-weight:400;line-height:1.55;color:${bodyColor};">
                 ${this.getAttribute('body-text')}
               </div>
             </mj-text>

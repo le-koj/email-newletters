@@ -13,7 +13,7 @@
   <mj-body>
     <!-- PREMIUM E-COMMERCE HEADER -->
     <mj-luma-header 
-      logo-src="images/d2c/soma-logo.png"
+      logo-src="https://resources.lekoj.com/d2c/soma-logo.png"
       logo-alt="Soma Sleep Logo"
       logo-width="110px"
       link-color="#1C1C1C"
@@ -26,14 +26,14 @@
       nav-3-href="https://yourportfolio.com/d2c/reviews"
       nav-4-text="Journal"
       nav-4-href="https://yourportfolio.com/d2c/journal"
-      account-icon-src="images/d2c/icons/account-icon-removebg.png"
-      cart-icon-src="images/d2c/icons/cart-icon-removebg.png"
+      account-icon-src="https://resources.lekoj.com/d2c/icons/account-icon-removebg.png"
+      cart-icon-src="https://resources.lekoj.com/d2c/icons/cart-icon-removebg.png"
     />
 
     <!-- CART ABANDONMENT HERO -->
     <mj-luma-hero 
       background-color="#FAF8F5"
-      background-url="images/d2c/abandoned-hero.png"
+      background-url="https://resources.lekoj.com/d2c/abandoned-hero.png"
       eyebrow-text="SOMA HYBRID MATTRESS"
       eyebrow-color="#C18B82"
       headline-line-1="Your best sleep"
@@ -110,17 +110,17 @@
       background-color="#FFFFFF"
       section-title="COMPLETE YOUR SLEEP RITUAL"
       section-title-color="#1C1C1C"
-      item-1-image-src="images/d2c/contour-pillow.png"
+      item-1-image-src="https://resources.lekoj.com/d2c/contour-pillow.png"
       item-1-image-alt="Soma Contour Pillow"
       item-1-title="Soma Contour Pillow"
       item-1-description="Ergonomic support for neck alignment."
       
-      item-2-image-src="images/d2c/soma-sheet.png"
+      item-2-image-src="https://resources.lekoj.com/d2c/soma-sheet.png"
       item-2-image-alt="Soma Eucalyptus Sheets"
       item-2-title="Soma Eucalyptus Sheets"
       item-2-description="Ultra-cooling organic Eucalyptus fibers."
       
-      item-3-image-src="images/d2c/soma-blanket.png"
+      item-3-image-src="https://resources.lekoj.com/d2c/soma-blanket.png"
       item-3-image-alt="Soma Weighted Blanket"
       item-3-title="Soma Weighted Blanket"
       item-3-description="Deep touch pressure for calm nights."

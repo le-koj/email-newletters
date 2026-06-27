@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const IMAGES_BASE = 'resources/images/luma'
 
@@ -95,7 +96,7 @@ export default class MjLumaHero extends BodyComponent {
     'background-size': 'cover',
     'background-position': 'right center',
     'background-repeat': 'no-repeat',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'content-column-width': '48%',
     'section-min-height': '320px',
     'eyebrow-text': 'PLANT-POWERED SKINCARE',
@@ -189,18 +190,18 @@ export default class MjLumaHero extends BodyComponent {
         <mj-section ${sectionAttrs}>
           <mj-column ${contentColAttrs}>
             <mj-text padding="${this.getAttribute('eyebrow-padding')}" align="left" css-class="luma-hero-eyebrow">
-              <div style="font-family:${fontFamily};font-size:${eyebrowSize};font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:${eyebrowColor};">
+              <div style="${lumaFontStack(fontFamily)}font-size:${eyebrowSize};font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:${eyebrowColor};">
                 ${this.getAttribute('eyebrow-text')}
               </div>
             </mj-text>
             <mj-text padding="${this.getAttribute('headline-padding')}" align="left" css-class="luma-hero-headline">
-              <div style="font-family:${fontFamily};font-size:${headlineSize};font-weight:700;line-height:1.05;letter-spacing:0.02em;text-transform:uppercase;color:${headlineColor};">
+              <div style="${lumaFontStack(fontFamily)}font-size:${headlineSize};font-weight:700;line-height:1.05;letter-spacing:0.02em;text-transform:uppercase;color:${headlineColor};">
                 ${this.getAttribute('headline-line-1')}<br />
                 ${this.getAttribute('headline-line-2')}
               </div>
             </mj-text>
             <mj-text padding="${this.getAttribute('body-padding')}" align="left" css-class="luma-hero-body">
-              <div style="font-family:${fontFamily};font-size:${bodySize};font-weight:400;line-height:1.55;color:${bodyColor};">
+              <div style="${lumaFontStack(fontFamily)}font-size:${bodySize};font-weight:400;line-height:1.55;color:${bodyColor};">
                 ${this.getAttribute('body-text')}
               </div>
             </mj-text>

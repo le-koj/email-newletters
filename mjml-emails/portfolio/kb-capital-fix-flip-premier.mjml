@@ -1,0 +1,258 @@
+<mjml>
+  <mj-head>
+    <!-- Subject line must match mj-title exactly when sending (SpamAssassin HTML_TITLE_SUBJ_DIFF). -->
+    <mj-title>KB Capital Group - 100% Fix &amp; Flip Premier Loan</mj-title>
+    <mj-preview>100% financing of purchase and rehab funds - no down payment, rates as low as 10.99%.</mj-preview>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Nunito"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Merriweather:wght@400;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Nunito, Arial, Helvetica Neue, Helvetica, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="680px" />
+      <mj-text color="#44464a" font-size="16px" line-height="1.6" />
+      <mj-button border-radius="22px" font-size="16px" font-weight="700" inner-padding="12px 32px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .kb-serif { font-family: Merriweather, Georgia, serif !important; }
+      .kb-stat-value div { font-family: Merriweather, Georgia, serif !important; }
+      .kb-feature-card { border-radius: 8px; }
+      .kb-feature-col.kb-feature-card > table > tbody > tr > td {
+        min-height: 150px !important;
+        vertical-align: top !important;
+        box-sizing: border-box !important;
+      }
+      @media only screen and (max-width: 480px) {
+        .kb-stat-col { padding: 8px 0 !important; }
+        .kb-feature-col { padding: 8px 0 !important; }
+        .kb-feature-gap { display: none !important; max-height: 0 !important; overflow: hidden !important; }
+        .kb-feature-col.kb-feature-card > table > tbody > tr > td {
+          min-height: auto !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <!-- BRAND HEADER -->
+    <mj-section background-color="#e8f4fc" padding="28px 24px 24px">
+      <mj-column>
+        <mj-image
+          src="https://ik.imagekit.io/lekoj2500/KB-Capital/KB_CAPITAL_LOGO_2024.png"
+          alt="KB Capital Group"
+          width="180px"
+          href="https://www.kbcapitalgrp.com"
+          align="center"
+          padding="0 0 16px 0"
+        />
+        <mj-text
+          css-class="kb-serif"
+          font-size="20px"
+          font-weight="700"
+          color="#033047"
+          align="center"
+          letter-spacing="0.5px"
+          padding="0"
+        >
+          WHY KB CAPITAL GROUP?
+        </mj-text>
+        <mj-text font-size="16px" color="#44464a" align="center" padding="8px 0 0 0">
+          When Other Lenders Won&rsquo;t, KB Capital Will.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PRODUCT HERO -->
+    <mj-section background-color="#FFFFFF" padding="32px 24px 16px">
+      <mj-column>
+        <mj-text
+          css-class="kb-serif"
+          font-size="22px"
+          font-weight="700"
+          color="#258fd2"
+          align="center"
+          line-height="1.3"
+          padding="0 0 12px 0"
+        >
+          100% Fix &amp; Flip/Ground Up Construction Loan
+        </mj-text>
+        <mj-text font-size="16px" color="#44464a" align="center" padding="0 0 20px 0">
+          No Down Payment &nbsp;|&nbsp; Rate: as low as 10.99%
+        </mj-text>
+        <mj-wrapper background-color="#e8f4fc" border-radius="8px" padding="14px 16px">
+          <mj-section padding="0">
+            <mj-column>
+              <mj-text
+                font-size="17px"
+                font-weight="700"
+                color="#033047"
+                align="center"
+                padding="0"
+              >
+                100% FINANCING OF PURCHASE AND REHAB FUNDS &nbsp;&bull;&nbsp; Up to 75% ARV
+              </mj-text>
+            </mj-column>
+          </mj-section>
+        </mj-wrapper>
+        <mj-text padding="20px 0 0 0">
+          <strong>Best For:</strong> The 100% Fix &amp; Flip Premier Loan is perfect for the real estate investor looking to minimize cash needed at closing with same-day approval and fast funding.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- KEY METRICS -->
+    <mj-section background-color="#FFFFFF" padding="8px 24px 24px">
+      <mj-column width="31%" background-color="#033047" border-radius="8px" padding="18px 12px" css-class="kb-stat-col">
+        <mj-text css-class="kb-stat-value" font-size="24px" font-weight="700" color="#FFFFFF" align="center" padding="0 0 6px 0">
+          100%
+        </mj-text>
+        <mj-text font-size="12px" font-weight="700" color="#e8f4fc" align="center" padding="0" line-height="1.35">
+          Purchase &amp; Rehab Financing
+        </mj-text>
+      </mj-column>
+      <mj-column width="3.5%"><mj-spacer height="12px" /></mj-column>
+      <mj-column width="31%" background-color="#033047" border-radius="8px" padding="18px 12px" css-class="kb-stat-col">
+        <mj-text css-class="kb-stat-value" font-size="24px" font-weight="700" color="#FFFFFF" align="center" padding="0 0 6px 0">
+          75%
+        </mj-text>
+        <mj-text font-size="12px" font-weight="700" color="#e8f4fc" align="center" padding="0" line-height="1.35">
+          Up to ARV
+        </mj-text>
+      </mj-column>
+      <mj-column width="3.5%"><mj-spacer height="12px" /></mj-column>
+      <mj-column width="31%" background-color="#033047" border-radius="8px" padding="18px 12px" css-class="kb-stat-col">
+        <mj-text css-class="kb-stat-value" font-size="24px" font-weight="700" color="#FFFFFF" align="center" padding="0 0 6px 0">
+          10.99%
+        </mj-text>
+        <mj-text font-size="12px" font-weight="700" color="#e8f4fc" align="center" padding="0" line-height="1.35">
+          Rates As Low As
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PROGRAM DETAILS -->
+    <mj-section background-color="#f5f5f5" padding="24px">
+      <mj-column border-left="4px solid #258fd2" padding="0 0 0 16px">
+        <mj-text font-size="18px" font-weight="700" color="#033047" padding="0 0 12px 0" css-class="kb-serif">
+          Program Overview
+        </mj-text>
+        <mj-text padding="0 0 8px 0"><strong>Term:</strong> 9-month loan with 3-month optional extension (extension fee applies).</mj-text>
+        <mj-text padding="0 0 8px 0"><strong>Loan Amount:</strong> $100k &ndash; $1.25M</mj-text>
+        <mj-text padding="0 0 8px 0"><strong>Points:</strong> As low as 2.0%</mj-text>
+        <mj-text padding="0 0 8px 0">Easy draw process and in-house loan servicing.</mj-text>
+        <mj-text padding="0"><strong>Nationwide</strong></mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FEATURE CARDS -->
+    <mj-section background-color="#FFFFFF" padding="24px 16px 8px">
+      <mj-column width="31%" background-color="#e8f4fc" border-radius="8px" padding="16px 14px" css-class="kb-feature-col kb-feature-card">
+        <mj-text font-size="17px" font-weight="700" color="#258fd2" line-height="1.3" padding="0 0 8px 0">
+          Fast Closing
+        </mj-text>
+        <mj-text font-size="14px" line-height="1.45" padding="0">
+          Same-day approval. Funding as fast as 5&ndash;10 business days.
+        </mj-text>
+      </mj-column>
+      <mj-column width="3.5%" css-class="kb-feature-gap"><mj-spacer height="1px" /></mj-column>
+      <mj-column width="31%" background-color="#e8f4fc" border-radius="8px" padding="16px 14px" css-class="kb-feature-col kb-feature-card">
+        <mj-text font-size="17px" font-weight="700" color="#258fd2" line-height="1.3" padding="0 0 8px 0">
+          Reliable Funding
+        </mj-text>
+        <mj-text font-size="14px" line-height="1.45" padding="0">
+          A direct lender without relying on third-party approval. Easy draw process with in-house loan servicing.
+        </mj-text>
+      </mj-column>
+      <mj-column width="3.5%" css-class="kb-feature-gap"><mj-spacer height="1px" /></mj-column>
+      <mj-column width="31%" background-color="#e8f4fc" border-radius="8px" padding="16px 14px" css-class="kb-feature-col kb-feature-card">
+        <mj-text font-size="17px" font-weight="700" color="#258fd2" line-height="1.3" padding="0 0 8px 0">
+          No Down Payment
+        </mj-text>
+        <mj-text font-size="14px" line-height="1.45" padding="0">
+          Keep your hard-earned cash. Only pay closing costs.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- QUALIFICATION -->
+    <mj-section background-color="#e8f4fc" padding="28px 24px">
+      <mj-column>
+        <mj-text
+          css-class="kb-serif"
+          font-size="20px"
+          font-weight="600"
+          color="#258fd2"
+          letter-spacing="0.5px"
+          padding="0 0 14px 0"
+        >
+          DO YOU QUALIFY?
+        </mj-text>
+        <mj-text padding="0 0 8px 0">
+          <strong>Cash:</strong> $15,000 or 25% of rehab budget, whichever is greater, plus closing costs.
+        </mj-text>
+        <mj-text padding="0 0 8px 0">
+          <strong>Credit:</strong> Minimum 650 credit score.
+        </mj-text>
+        <mj-text padding="0 0 16px 0">
+          <strong>Only Six Documents Required:</strong> 1) Completed Application 2) Signed Business Entity Documents 3) Signed Agreement of Sale 4) Three months of Bank Statements 5) Valid Government Issued Photo ID 6) Itemized List of Repairs.
+        </mj-text>
+        <mj-text font-weight="600" color="#033047" padding="0">
+          Ground Up Loan Options Available
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#033047" padding="32px 24px">
+      <mj-column>
+        <mj-text
+          css-class="kb-serif"
+          font-size="18px"
+          font-weight="600"
+          color="#FFFFFF"
+          align="center"
+          letter-spacing="0.5px"
+          padding="0 0 20px 0"
+        >
+          Schedule a Loan Review With Your Account Executive
+        </mj-text>
+        <mj-button
+          href="https://www.kbcapitalgrp.com/loan-programs/"
+          background-color="#258fd2"
+          color="#FFFFFF"
+          align="center"
+          padding="0"
+        >
+          Quick Scenario
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- CONTACT SIGNATURE -->
+    <mj-section background-color="#FFFFFF" padding="32px 24px 16px">
+      <mj-column border-left="3px solid #258fd2" padding="0 0 0 20px">
+        <mj-text padding="0 0 4px 0">Kind Regards,</mj-text>
+        <mj-text font-weight="600" color="#131313" padding="0 0 2px 0">Kory Balogun</mj-text>
+        <mj-text padding="0 0 12px 0">Account Manager</mj-text>
+        <mj-text padding="0 0 4px 0">5652 Fallbrook Ave, Woodland Hills CA 91367</mj-text>
+        <mj-text padding="0 0 4px 0">Phone: 888-886-6115</mj-text>
+        <mj-text padding="0">
+          Email:
+          <a href="mailto:kory@kbcapitalgrp.com" style="color: #00aeef; text-decoration: underline;">kory@kbcapitalgrp.com</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#f5f5f5" padding="20px 24px">
+      <mj-column>
+        <mj-text font-size="12px" color="#9d9d9d" align="center" padding="0">
+          &copy; Copyright 2026. KB Capital Group. All Rights Reserved.
+        </mj-text>
+        <mj-text font-size="12px" align="center" padding="8px 0 0 0">
+          <a href="sr_unsubscribe" style="color: #00aeef; text-decoration: underline;">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

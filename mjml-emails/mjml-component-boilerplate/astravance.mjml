@@ -7,9 +7,16 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-astravance-header />
+    <mj-astravance-header
+      background-url="https://resources.lekoj.com/astravance/astravance-banner.png"
+      logo-src="https://resources.lekoj.com/astravance/astravance-logo-removebg.png"
+    />
     <mj-astravance-intro />
-    <mj-astravance-updates /> 
+    <mj-astravance-updates
+      row1-image-src="https://resources.lekoj.com/astravance/astravance-mission-control.png"
+      row2-image-src="https://resources.lekoj.com/astravance/astravance-warehouse.png"
+      row3-image-src="https://resources.lekoj.com/astravance/astravance-logistics.png"
+    />
     <mj-astravance-info />
   </mj-body>
 </mjml>

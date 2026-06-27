@@ -11,12 +11,35 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-luma-header />
-    <mj-luma-hero />    
-    <mj-luma-favorites />
-    <mj-luma-ritual />
-    <mj-luma-essentials />
-    <mj-luma-trust-bar />
-    <mj-luma-footer />
+    <mj-luma-header
+      logo-src="https://resources.lekoj.com/luma/luma-logo-removebg.png"
+      account-icon-src="https://resources.lekoj.com/luma/icons/account-icon-removebg.png"
+      cart-icon-src="https://resources.lekoj.com/luma/icons/cart-icon-removebg.png"
+    />
+    <mj-luma-hero
+      background-url="https://resources.lekoj.com/luma/luma-hero-2.png"
+      headline-font-size="36px"
+    />
+    <mj-luma-favorites
+      item-1-image-src="https://resources.lekoj.com/luma/luma-cleanser.png"
+      item-2-image-src="https://resources.lekoj.com/luma/luma-serum.png"
+      item-3-image-src="https://resources.lekoj.com/luma/luma-nourish.png"
+    />
+    <mj-luma-ritual
+      image-src="https://resources.lekoj.com/luma/luma-product-2.png"
+    />
+    <mj-luma-essentials
+      image-1-src="https://resources.lekoj.com/luma/luma-oil.png"
+      image-2-src="https://resources.lekoj.com/luma/luma-cream.png"
+    />
+    <mj-luma-trust-bar
+      item-1-icon-src="https://resources.lekoj.com/luma/icons/leaf-icon-removebg.png"
+      item-2-icon-src="https://resources.lekoj.com/luma/icons/chem-flask-icon-removebg.png"
+      item-3-icon-src="https://resources.lekoj.com/luma/icons/heart-icon-removebg.png"
+      item-4-icon-src="https://resources.lekoj.com/luma/icons/truck-icon-removebg.png"
+    />
+    <mj-luma-footer
+      logo-src="https://resources.lekoj.com/luma/luma-logo-removebg.png"
+    />
   </mj-body>
 </mjml>

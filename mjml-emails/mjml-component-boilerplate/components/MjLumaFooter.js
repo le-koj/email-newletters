@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const IMAGES_BASE = 'resources/images/luma'
 
@@ -71,7 +72,7 @@ export default class MjLumaFooter extends BodyComponent {
     'background-color': '#FFFFFF',
     'text-color': '#6B6B6B',
     'link-color': '#2D2D2D',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'logo-src': `${IMAGES_BASE}/luma-logo-removebg.png`,
     'logo-alt': 'Luma Botanics',
     'logo-width': '100px',
@@ -135,11 +136,11 @@ export default class MjLumaFooter extends BodyComponent {
         (link, index) => `
           <td
             valign="middle"
-            style="padding:${index < links.length - 1 ? `0 ${gap} 0 0` : '0'};font-family:${fontFamily};font-size:${fontSize};line-height:1.4;"
+            style="padding:${index < links.length - 1 ? `0 ${gap} 0 0` : '0'};${lumaFontStack(fontFamily)}font-size:${fontSize};line-height:1.4;"
           >
             <a
               href="${link.href}"
-              style="color:${linkColor};text-decoration:none;font-family:${fontFamily};font-size:${fontSize};font-weight:400;"
+              style="color:${linkColor};text-decoration:none;${lumaFontStack(fontFamily)}font-size:${fontSize};font-weight:400;"
             >
               ${link.text}
             </a>
@@ -164,7 +165,7 @@ export default class MjLumaFooter extends BodyComponent {
     const fontSize = this.getAttribute('unsubscribe-font-size')
 
     return `
-      <div style="font-family:${fontFamily};font-size:${fontSize};line-height:1.5;color:${textColor};">
+      <div style="${lumaFontStack(fontFamily)}font-size:${fontSize};line-height:1.5;color:${textColor};">
         ${this.getAttribute('unsubscribe-statement')}
         <a href="${this.getAttribute('unsubscribe-href')}" style="color:${linkColor};text-decoration:underline;">${this.getAttribute('unsubscribe-link-text')}</a>
       </div>

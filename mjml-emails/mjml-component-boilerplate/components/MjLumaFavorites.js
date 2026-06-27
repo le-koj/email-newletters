@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const IMAGES_BASE = 'resources/images/luma'
 
@@ -98,7 +99,7 @@ export default class MjLumaFavorites extends BodyComponent {
     'divider-length': '48px',
     'product-title-color': '#1A1A1A',
     'product-description-color': '#6B6B6B',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'column-width': '33.33%',
     'column-padding': '0 8px',
     'image-border-radius': '10px',
@@ -134,7 +135,7 @@ export default class MjLumaFavorites extends BodyComponent {
     const dividerLength = this.getAttribute('divider-length')
 
     return `
-      <div style="font-family:${fontFamily};font-size:${titleSize};font-weight:500;letter-spacing:${letterSpacing};text-transform:uppercase;color:${titleColor};text-align:center;">
+      <div style="${lumaFontStack(fontFamily)}font-size:${titleSize};font-weight:500;letter-spacing:${letterSpacing};text-transform:uppercase;color:${titleColor};text-align:center;">
         ${this.getAttribute('section-title')}
       </div>
       <div style="width:${dividerLength};border-top:${dividerWidth} solid ${dividerColor};margin:14px auto 0;font-size:0;line-height:0;">
@@ -179,7 +180,7 @@ export default class MjLumaFavorites extends BodyComponent {
           align="center"
           css-class="luma-favorites-product-title"
         >
-          <div style="font-family:${fontFamily};font-size:${titleSize};font-weight:700;line-height:1.35;color:${titleColor};">
+          <div style="${lumaFontStack(fontFamily)}font-size:${titleSize};font-weight:700;line-height:1.35;color:${titleColor};">
             ${this.getAttribute(`${prefix}-title`)}
           </div>
         </mj-text>
@@ -188,7 +189,7 @@ export default class MjLumaFavorites extends BodyComponent {
           align="center"
           css-class="luma-favorites-product-description"
         >
-          <div style="font-family:${fontFamily};font-size:${descSize};font-weight:400;line-height:1.45;color:${descColor};">
+          <div style="${lumaFontStack(fontFamily)}font-size:${descSize};font-weight:400;line-height:1.45;color:${descColor};">
             ${this.getAttribute(`${prefix}-description`)}
           </div>
         </mj-text>

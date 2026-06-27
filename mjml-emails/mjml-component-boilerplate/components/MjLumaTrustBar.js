@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const ICONS_BASE = 'resources/images/luma/icons'
 
@@ -77,7 +78,7 @@ export default class MjLumaTrustBar extends BodyComponent {
     'background-color': '#F5F2EB',
     'title-color': '#2D2D2D',
     'description-color': '#6B6B6B',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'column-width': '25%',
     'column-padding': '0 8px',
     'icon-width': '32px',
@@ -133,10 +134,10 @@ export default class MjLumaTrustBar extends BodyComponent {
             />
           </td>
           <td valign="middle">
-            <div style="font-family:${fontFamily};font-size:${titleSize};font-weight:700;line-height:1.3;color:${titleColor};margin:0;">
+            <div style="${lumaFontStack(fontFamily)}font-size:${titleSize};font-weight:700;line-height:1.3;color:${titleColor};margin:0;">
               ${title}
             </div>
-            <div style="font-family:${fontFamily};font-size:${descSize};font-weight:400;line-height:1.4;color:${descColor};margin:4px 0 0;">
+            <div style="${lumaFontStack(fontFamily)}font-size:${descSize};font-weight:400;line-height:1.4;color:${descColor};margin:4px 0 0;">
               ${description}
             </div>
           </td>

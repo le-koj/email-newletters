@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const IMAGES_BASE = 'resources/images/luma'
 
@@ -94,7 +95,7 @@ export default class MjLumaEssentials extends BodyComponent {
 
   static defaultAttributes = {
     'background-color': '#FFFFFF',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'image-column-width': '29%',
     'content-column-width': '42%',
     'image-border-radius': '10px',
@@ -190,17 +191,17 @@ export default class MjLumaEssentials extends BodyComponent {
     return `
       <mj-column ${columnAttrs}>
         <mj-text padding="${this.getAttribute('eyebrow-padding')}" align="left" css-class="luma-essentials-eyebrow">
-          <div style="font-family:${fontFamily};font-size:${eyebrowSize};font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:${eyebrowColor};">
+          <div style="${lumaFontStack(fontFamily)}font-size:${eyebrowSize};font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:${eyebrowColor};">
             ${this.getAttribute('eyebrow-text')}
           </div>
         </mj-text>
         <mj-text padding="${this.getAttribute('heading-padding')}" align="left" css-class="luma-essentials-heading">
-          <div style="font-family:${fontFamily};font-size:${headingSize};font-weight:700;line-height:1.2;color:${headingColor};">
+          <div style="${lumaFontStack(fontFamily)}font-size:${headingSize};font-weight:700;line-height:1.2;color:${headingColor};">
             ${this.getAttribute('heading-text')}
           </div>
         </mj-text>
         <mj-text padding="${this.getAttribute('body-padding')}" align="left" css-class="luma-essentials-body">
-          <div style="font-family:${fontFamily};font-size:${bodySize};font-weight:400;line-height:1.55;color:${bodyColor};">
+          <div style="${lumaFontStack(fontFamily)}font-size:${bodySize};font-weight:400;line-height:1.55;color:${bodyColor};">
             ${this.getAttribute('body-text')}
           </div>
         </mj-text>

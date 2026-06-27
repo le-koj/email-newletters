@@ -1,4 +1,5 @@
 import { BodyComponent } from 'mjml-core'
+import { LUMA_FONT_STACK, lumaFontStack } from '../lumaFontStack'
 
 const IMAGES_BASE = 'resources/images/luma'
 const ICONS_BASE = `${IMAGES_BASE}/icons`
@@ -93,7 +94,7 @@ export default class MjLumaHeader extends BodyComponent {
     'divider-color': '#E8E8E8',
     'divider-width': '1px',
     'link-color': '#2D2D2D',
-    'font-family': 'Inter, Helvetica, Arial, sans-serif',
+    'font-family': LUMA_FONT_STACK,
     'logo-src': `${IMAGES_BASE}/luma-logo-removebg.png`,
     'logo-alt': 'Luma Botanics',
     'logo-width': '100px',
@@ -138,11 +139,11 @@ export default class MjLumaHeader extends BodyComponent {
         (link, index) => `
           <td
             valign="middle"
-            style="padding:${index < links.length - 1 ? `0 ${gap} 0 0` : '0'};font-family:${fontFamily};font-size:${fontSize};line-height:1.2;"
+            style="padding:${index < links.length - 1 ? `0 ${gap} 0 0` : '0'};${lumaFontStack(fontFamily)}font-size:${fontSize};line-height:1.2;"
           >
             <a
               href="${link.href}"
-              style="color:${linkColor};text-decoration:none;font-family:${fontFamily};font-size:${fontSize};font-weight:400;"
+              style="color:${linkColor};text-decoration:none;${lumaFontStack(fontFamily)}font-size:${fontSize};font-weight:400;"
             >
               ${link.text}
             </a>

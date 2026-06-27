@@ -15,18 +15,18 @@
     <mj-northbridge-header 
       preheader-text="Case Study: How Apex Legal scaled their demo pipeline with FlowSync automation."
       view-in-browser-href="https://yourportfolio.com/portfolio/b2b-case-study/web-version"
-      logo-src="images/b2b/flowsync-logo.png"
+      logo-src="https://resources.lekoj.com/b2b/flowsync-logo.png"
       brand-line-1="FlowSync"
       brand-line-2="Weekly"
       digest-label="SaaS Teardown"
       digest-date="June 2026"
       digest-issue="Issue #48"
-      digest-icon-src="images/b2b/icons/book-icon-removebg.png"
+      digest-icon-src="https://resources.lekoj.com/b2b/icons/book-icon-removebg.png"
     />
 
     <!-- HERO SECTION WITH CASE STUDY SUMMARY -->
     <mj-northbridge-hero 
-      image-src="images/b2b/dashboard-hero.png"
+      image-src="https://resources.lekoj.com/b2b/dashboard-hero.png"
       image-alt="FlowSync Automation Builder Interface"
       image-mobile-ratio="100%"
       content-padding="10px 36px"
@@ -86,16 +86,16 @@
       background-color="#FFFFFF"
       accent-color="#1D4ED8"
       padding="20px 16px"
-      row1-image-src="images/b2b/flowsync-int.png"
+      row1-image-src="https://resources.lekoj.com/b2b/flowsync-int.png"
       row1-image-alt="HubSpot and Clearbit Flow Diagram"
-      row1-icon-src="images/b2b/icons/enrichment-logo-removebg.png"
+      row1-icon-src="https://resources.lekoj.com/b2b/icons/enrichment-logo-removebg.png"
       row1-eyebrow="Phase 1: Enrichment"
       row1-title="Instant Data Resolution"
       row1-body="FlowSync listens to webhook events from form submissions. Clearbit API resolves company size and annual recurring revenue (ARR) in less than 3 seconds, storing the clean profile in HubSpot."
       row1-link-text="View API details"
       row1-link-href="https://yourportfolio.com/portfolio/b2b/enrichment"
       
-      row2-image-src="images/b2b/flowsync-routing.png"
+      row2-image-src="https://resources.lekoj.com/b2b/flowsync-routing.png"
       row2-image-alt="Dynamic Routing Diagram"
       row2-icon-src=""
       row2-eyebrow="Phase 2: Routing"
@@ -104,9 +104,9 @@
       row2-link-text="Study routing logic"
       row2-link-href="https://yourportfolio.com/portfolio/b2b/routing"
       
-      row3-image-src="images/b2b/flowsync-connection.png"
+      row3-image-src="https://resources.lekoj.com/b2b/flowsync-connection.png"
       row3-image-alt="Sales rep using automation tools"
-      row3-icon-src="images/b2b/icons/conection-icon-removebg.png"
+      row3-icon-src="https://resources.lekoj.com/b2b/icons/conection-icon-removebg.png"
       row3-eyebrow="Phase 3: Connection"
       row3-title="Automated Slack Alerts"
       row3-body="When an Enterprise Match schedules a demo, the dedicated account executive is alerted via a Slack notification containing enriched buyer data, allowing them to prepare tailored material in minutes."
@@ -120,7 +120,7 @@
       card-color="#0C1C36"
       accent-color="#5B8FE0"
       icon-src=""
-      image-src="images/b2b/northbridge-professional.png"
+      image-src="https://resources.lekoj.com/b2b/northbridge-professional.png"
       image-alt="Sarah Jenkins, VP of Revenue Operations"
       eyebrow="Revenue Ops Spotlight"
       title="“FlowSync turned our demo funnel into a high-speed machine.”"
@@ -143,7 +143,7 @@
 
     <!-- PREDEFINED B2B FOOTER -->
     <mj-northbridge-footer 
-      logo-src="images/b2b/flowsync-logo.png"
+      logo-src="https://resources.lekoj.com/b2b/flowsync-logo.png"
       company-name="FlowSync Technologies Inc."
       address-line-1="100 Enterprise Way, Suite 500"
       address-line-2="San Francisco, CA 94107"
