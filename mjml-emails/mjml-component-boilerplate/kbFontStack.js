@@ -1,6 +1,14 @@
 export const KB_BODY_FONT = 'Nunito, Arial, Helvetica Neue, Helvetica, sans-serif'
 export const KB_HEADING_FONT = 'Merriweather, Georgia, serif'
 
+export const KB_SPACING = {
+  sectionX: '24px',
+  sectionY: '32px',
+  sectionYLarge: '40px',
+  sectionYCompact: '12px',
+  preheaderY: '10px',
+}
+
 export const KB_COLORS = {
   navy: '#033047',
   blue: '#258fd2',

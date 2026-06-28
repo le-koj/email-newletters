@@ -30,7 +30,7 @@ export default class MjKbcapitalHighlightBar extends BodyComponent {
     'icon-src': KB_FINANCING_ICON,
     'icon-size': '40px',
     'border-radius': '8px',
-    padding: '0 24px 16px',
+    padding: '0 24px 12px',
     'bar-padding': '14px 16px',
     'font-size': '15px',
   }

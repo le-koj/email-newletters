@@ -33,8 +33,13 @@ export default class MjKbcapitalQualify extends BodyComponent {
 
   componentHeadStyle = () => `
     @media only screen and (max-width:480px) {
+      div.kbcapital-qualify-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 32px !important;
+      }
       div.kbcapital-qualify-inner > table > tbody > tr > td {
-        padding: 20px !important;
+        padding: 24px !important;
       }
       div.kbcapital-qualify-content > table > tbody > tr > td,
       div.kbcapital-qualify-aside > table > tbody > tr > td {
@@ -61,7 +66,7 @@ export default class MjKbcapitalQualify extends BodyComponent {
     'aside-text': 'Ground Up Loan Options Available',
     'icon-src': KB_CHECK_ICON,
     'icon-size': '28px',
-    padding: '0 24px 24px',
+    padding: '0 24px 40px',
     'box-padding': '24px',
     'border-radius': '8px',
     'content-width': '68%',
@@ -117,6 +122,7 @@ export default class MjKbcapitalQualify extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-qualify-section',
       })}>
         <mj-column>
           <mj-wrapper ${this.htmlAttributes({

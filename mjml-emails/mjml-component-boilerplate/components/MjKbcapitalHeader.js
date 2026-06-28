@@ -22,7 +22,7 @@ export default class MjKbcapitalHeader extends BodyComponent {
     'logo-width': '180px',
     'logo-alt': 'KB Capital Group',
     'logo-href': 'https://www.kbcapitalgrp.com',
-    padding: '28px 24px 20px',
+    padding: '24px 24px 8px',
   }
 
   render() {

@@ -18,13 +18,23 @@ export default class MjKbcapitalBestFor extends BodyComponent {
     'font-size': 'unit(px)',
   }
 
+  componentHeadStyle = () => `
+    @media only screen and (max-width:480px) {
+      div.kbcapital-best-for-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 28px !important;
+      }
+    }
+  `
+
   static defaultAttributes = {
     'background-color': '#FFFFFF',
     'label-color': KB_COLORS.blue,
     'text-color': KB_COLORS.text,
     label: 'Best For:',
     text: 'The 100% Fix & Flip Premier Loan is perfect for the real estate investor looking to minimize cash needed at closing with same-day approval and fast funding.',
-    padding: '0 24px 24px',
+    padding: '0 24px 36px',
     'font-size': '16px',
   }
 
@@ -37,6 +47,7 @@ export default class MjKbcapitalBestFor extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-best-for-section',
       })}>
         <mj-column>
           <mj-text padding="0" align="center">

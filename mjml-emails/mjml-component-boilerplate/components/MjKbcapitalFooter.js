@@ -53,7 +53,7 @@ export default class MjKbcapitalFooter extends BodyComponent {
     copyright: '\u00a9 Copyright 2026. KB Capital Group. All Rights Reserved.',
     'unsubscribe-text': 'Unsubscribe',
     'unsubscribe-href': 'sr_unsubscribe',
-    padding: '20px 24px',
+    padding: '24px 24px 32px',
     'font-size': '12px',
     'copyright-width': '70%',
     'links-width': '30%',

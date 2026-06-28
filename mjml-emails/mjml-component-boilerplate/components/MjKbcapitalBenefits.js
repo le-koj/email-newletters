@@ -30,8 +30,13 @@ export default class MjKbcapitalBenefits extends BodyComponent {
 
   componentHeadStyle = () => `
     @media only screen and (max-width:480px) {
+      div.kbcapital-benefits-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 28px !important;
+      }
       .kbcapital-benefit-gap { display: none !important; max-height: 0 !important; overflow: hidden !important; }
-      .kbcapital-benefit-col { padding: 12px 0 !important; }
+      .kbcapital-benefit-col { padding: 20px 0 !important; }
     }
   `
 
@@ -41,7 +46,7 @@ export default class MjKbcapitalBenefits extends BodyComponent {
     'text-color': KB_COLORS.text,
     'icon-src': KB_CHECK_ICON,
     'icon-size': '28px',
-    padding: '0 24px 24px',
+    padding: '0 24px 36px',
     'column-width': '31%',
     'gap-width': '3.5%',
     'title-font-size': '17px',
@@ -100,6 +105,7 @@ export default class MjKbcapitalBenefits extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-benefits-section',
       })}>
         ${this.renderBenefitColumn(1)}
         <mj-column width="${gap}" css-class="kbcapital-benefit-gap"><mj-spacer height="1px" /></mj-column>

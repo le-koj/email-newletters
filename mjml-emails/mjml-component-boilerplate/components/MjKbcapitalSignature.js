@@ -26,6 +26,14 @@ export default class MjKbcapitalSignature extends BodyComponent {
     'font-size': 'unit(px)',
   }
 
+  componentHeadStyle = () => `
+    @media only screen and (max-width:480px) {
+      div.kbcapital-signature-section > table > tbody > tr > td {
+        padding: 28px 20px 24px !important;
+      }
+    }
+  `
+
   static defaultAttributes = {
     'background-color': '#FFFFFF',
     'accent-color': KB_COLORS.blue,
@@ -39,7 +47,7 @@ export default class MjKbcapitalSignature extends BodyComponent {
     phone: 'Phone: 888-886-6115',
     email: 'kory@kbcapitalgrp.com',
     'email-href': 'mailto:kory@kbcapitalgrp.com',
-    padding: '8px 24px 16px',
+    padding: '36px 24px 24px',
     'accent-width': '3px',
     'font-size': '16px',
   }
@@ -82,6 +90,7 @@ export default class MjKbcapitalSignature extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-signature-section',
       })}>
         <mj-column padding="0 0 0 20px" border-left="${accentWidth} solid ${accent}">
           <mj-text padding="0">${content}</mj-text>

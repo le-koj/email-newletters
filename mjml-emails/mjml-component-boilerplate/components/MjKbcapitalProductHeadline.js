@@ -19,13 +19,22 @@ export default class MjKbcapitalProductHeadline extends BodyComponent {
     'subtitle-font-size': 'unit(px)',
   }
 
+  componentHeadStyle = () => `
+    @media only screen and (max-width:480px) {
+      div.kbcapital-product-headline-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+  `
+
   static defaultAttributes = {
     'background-color': '#FFFFFF',
     'title-color': KB_COLORS.navy,
     'subtitle-color': KB_COLORS.text,
     title: '100% Fix & Flip/Ground Up Construction Loan',
     subtitle: 'No Down Payment | Rate: as low as 10.99%',
-    padding: '8px 24px 16px',
+    padding: '0 24px 8px',
     'title-font-size': '24px',
     'subtitle-font-size': '16px',
   }
@@ -40,6 +49,7 @@ export default class MjKbcapitalProductHeadline extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-product-headline-section',
       })}>
         <mj-column>
           <mj-text padding="0 0 10px 0" align="center">

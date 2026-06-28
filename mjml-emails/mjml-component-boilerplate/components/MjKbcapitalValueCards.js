@@ -35,8 +35,13 @@ export default class MjKbcapitalValueCards extends BodyComponent {
       box-sizing: border-box !important;
     }
     @media only screen and (max-width:480px) {
+      div.kbcapital-value-cards-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 28px !important;
+      }
       .kbcapital-value-gap { display: none !important; max-height: 0 !important; overflow: hidden !important; }
-      .kbcapital-value-card { padding: 8px 0 !important; }
+      .kbcapital-value-card { padding: 12px 0 !important; }
       .kbcapital-value-card > table > tbody > tr > td { min-height: auto !important; }
     }
   `
@@ -46,7 +51,7 @@ export default class MjKbcapitalValueCards extends BodyComponent {
     'card-color': KB_COLORS.navy,
     'value-color': KB_COLORS.white,
     'label-color': KB_COLORS.lightBlue,
-    padding: '0 24px 24px',
+    padding: '0 24px 36px',
     'card-padding': '18px 12px',
     'border-radius': '8px',
     'column-width': '31%',
@@ -103,6 +108,7 @@ export default class MjKbcapitalValueCards extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-value-cards-section',
       })}>
         ${this.renderCardColumn(1)}
         <mj-column width="${gap}" css-class="kbcapital-value-gap"><mj-spacer height="1px" /></mj-column>

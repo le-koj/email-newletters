@@ -20,13 +20,23 @@ export default class MjKbcapitalCtaButton extends BodyComponent {
     'inner-padding': 'unit(px){1,4}',
   }
 
+  componentHeadStyle = () => `
+    @media only screen and (max-width:480px) {
+      div.kbcapital-cta-button-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 28px !important;
+      }
+    }
+  `
+
   static defaultAttributes = {
     'background-color': '#FFFFFF',
     'button-color': KB_COLORS.blue,
     'button-text-color': KB_COLORS.white,
     href: 'https://www.kbcapitalgrp.com/loan-programs/',
     text: 'Quick Scenario',
-    padding: '0 24px 24px',
+    padding: '20px 24px 36px',
     'border-radius': '22px',
     'font-size': '16px',
     'inner-padding': '12px 32px',
@@ -49,6 +59,7 @@ export default class MjKbcapitalCtaButton extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-cta-button-section',
       })}>
         <mj-column>
           <mj-button ${buttonAttrs}>${this.getAttribute('text')}</mj-button>

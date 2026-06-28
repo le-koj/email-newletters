@@ -39,7 +39,7 @@ export default class MjKbcapitalHero extends BodyComponent {
       div.kbcapital-hero-copy > table > tbody > tr > td {
         width: 100% !important;
         display: block !important;
-        padding: 0 20px 16px !important;
+        padding: 0 20px 24px !important;
       }
       div.kbcapital-hero-image > table > tbody > tr > td {
         width: 100% !important;
@@ -90,7 +90,7 @@ export default class MjKbcapitalHero extends BodyComponent {
     'image-mobile-height': '240px',
     'image-mobile-focus': '78% center',
     'column-width': '50%',
-    padding: '0 24px 24px',
+    padding: '16px 24px 36px',
     'content-padding': '0 16px 0 0',
     'title-font-size': '20px',
     'body-font-size': '16px',

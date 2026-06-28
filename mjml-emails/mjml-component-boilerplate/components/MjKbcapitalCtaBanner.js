@@ -30,8 +30,13 @@ export default class MjKbcapitalCtaBanner extends BodyComponent {
 
   componentHeadStyle = () => `
     @media only screen and (max-width:480px) {
+      div.kbcapital-cta-banner-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 32px !important;
+      }
       div.kbcapital-cta-banner-inner > table > tbody > tr > td {
-        padding: 20px !important;
+        padding: 24px !important;
       }
       div.kbcapital-cta-banner-text > table > tbody > tr > td,
       div.kbcapital-cta-banner-button > table > tbody > tr > td {
@@ -55,7 +60,7 @@ export default class MjKbcapitalCtaBanner extends BodyComponent {
     headline: 'Schedule a Loan Review With Your Account Executive',
     href: 'https://www.kbcapitalgrp.com/loan-programs/',
     'button-text': 'Quick Scenario >',
-    padding: '0 24px 24px',
+    padding: '0 24px 40px',
     'banner-padding': '24px',
     'border-radius': '8px',
     'text-width': '62%',
@@ -86,6 +91,7 @@ export default class MjKbcapitalCtaBanner extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-cta-banner-section',
       })}>
         <mj-column>
           <mj-wrapper ${this.htmlAttributes({

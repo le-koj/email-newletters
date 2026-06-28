@@ -11,7 +11,6 @@ export default class MjKbcapitalProgramOverview extends BodyComponent {
   static allowedAttributes = {
     'background-color': 'color',
     'box-color': 'color',
-    'border-color': 'color',
     'accent-color': 'color',
     'title-color': 'color',
     'text-color': 'color',
@@ -29,6 +28,16 @@ export default class MjKbcapitalProgramOverview extends BodyComponent {
     'body-font-size': 'unit(px)',
   }
 
+  componentHeadStyle = () => `
+    @media only screen and (max-width:480px) {
+      div.kbcapital-program-overview-section > table > tbody > tr > td {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 28px !important;
+      }
+    }
+  `
+
   static defaultAttributes = {
     'background-color': '#FFFFFF',
     'box-color': KB_COLORS.grayBg,
@@ -42,7 +51,7 @@ export default class MjKbcapitalProgramOverview extends BodyComponent {
     'line-3': '<strong>Points:</strong> As low as 2.0%',
     'line-4': 'Easy draw process and in-house loan servicing.',
     'line-5': '<strong>Nationwide</strong>',
-    padding: '0 24px 24px',
+    padding: '0 24px 36px',
     'box-padding': '20px 20px 20px 16px',
     'border-radius': '8px',
     'accent-width': '4px',
@@ -90,6 +99,7 @@ export default class MjKbcapitalProgramOverview extends BodyComponent {
       <mj-section ${this.htmlAttributes({
         'background-color': this.getAttribute('background-color'),
         padding: this.getAttribute('padding'),
+        'css-class': 'kbcapital-program-overview-section',
       })}>
         <mj-column
           ${this.htmlAttributes({
