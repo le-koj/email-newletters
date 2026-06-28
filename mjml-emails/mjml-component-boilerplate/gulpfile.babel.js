@@ -19,7 +19,7 @@ const walkSync = (dir, filelist = []) => {
 const watchedComponents = walkSync('./components')
 
 // Folders scanned for top-level *.mjml entries; output .html is written next to each input.
-const mjmlDirs = ['.', '../portfolio']
+const mjmlDirs = ['.', '../portfolio', '../portfolio/kbcapital']
 
 const compile = () => {
   return gulp
@@ -70,6 +70,7 @@ gulp.task('watch', () => {
       path.normalize('components/**/*.js'),
       path.normalize('*.mjml'),
       path.normalize('../portfolio/*.mjml'),
+      path.normalize('../portfolio/kbcapital/*.mjml'),
     ],
     compile,
   )

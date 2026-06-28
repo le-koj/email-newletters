@@ -1,0 +1,48 @@
+<mjml>
+  <mj-head>
+    <mj-title>KB Capital Group - 100% Fix &amp; Flip Premier Loan</mj-title>
+    <mj-preview>100% financing of purchase and rehab funds - no down payment, rates as low as 10.99%.</mj-preview>
+    <mj-breakpoint width="480px" />
+    <mj-font
+      name="Nunito"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Merriweather:wght@400;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-all font-family="Nunito, Arial, Helvetica Neue, Helvetica, sans-serif" />
+      <mj-body background-color="#FFFFFF" width="680px" />
+      <mj-text color="#44464a" font-size="16px" line-height="1.6" />
+      <mj-button border-radius="22px" font-size="16px" font-weight="700" inner-padding="12px 32px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-kbcapital-view-in-browser
+      view-in-browser-href="https://www.kbcapitalgrp.com/campaigns/100-fix-flip-premier/web-version"
+    />
+
+    <mj-kbcapital-header />
+
+    <mj-kbcapital-hero image-src="images/100-fix-hero.png" />
+
+    <mj-kbcapital-product-headline />
+
+    <mj-kbcapital-highlight-bar />
+
+    <mj-kbcapital-cta-button />
+
+    <mj-kbcapital-value-cards />
+
+    <mj-kbcapital-best-for />
+
+    <mj-kbcapital-program-overview />
+
+    <mj-kbcapital-benefits />
+
+    <mj-kbcapital-qualify />
+
+    <mj-kbcapital-cta-banner />
+
+    <mj-kbcapital-signature />
+
+    <mj-kbcapital-footer />
+  </mj-body>
+</mjml>
