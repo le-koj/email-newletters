@@ -42,11 +42,20 @@ export default class MjKbcapitalCtaBanner extends BodyComponent {
       div.kbcapital-cta-banner-button > table > tbody > tr > td {
         width: 100% !important;
         display: block !important;
-        text-align: center !important;
         padding: 0 !important;
+      }
+      div.kbcapital-cta-banner-text > table > tbody > tr > td {
+        text-align: left !important;
+      }
+      div.kbcapital-cta-banner-button > table > tbody > tr > td,
+      div.kbcapital-cta-banner-button td[align="right"] {
+        text-align: left !important;
       }
       div.kbcapital-cta-banner-button > table > tbody > tr > td {
         padding-top: 16px !important;
+      }
+      div.kbcapital-cta-banner-button table tbody tr td table {
+        margin: 0 !important;
       }
     }
   `
