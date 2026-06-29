@@ -33,7 +33,7 @@ export default class MjKbcapitalProductHeadline extends BodyComponent {
     'title-color': KB_COLORS.navy,
     'subtitle-color': KB_COLORS.text,
     title: '100% Fix & Flip/Ground Up Construction Loan',
-    subtitle: 'No Down Payment | Rate: as low as 10.99%',
+    subtitle: 'No Down Payment | Rate: as low as 9.25%',
     padding: '0 24px 8px',
     'title-font-size': '24px',
     'subtitle-font-size': '16px',

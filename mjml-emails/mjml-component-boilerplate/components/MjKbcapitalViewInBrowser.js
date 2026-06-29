@@ -38,7 +38,7 @@ export default class MjKbcapitalViewInBrowser extends BodyComponent {
     'text-color': KB_COLORS.text,
     'link-color': KB_COLORS.blue,
     'preheader-text':
-      '100% financing of purchase and rehab funds - no down payment, rates as low as 10.99%.',
+      '100% financing of purchase and rehab funds - no down payment, rates as low as 9.25%.',
     'view-in-browser-text': 'View in browser',
     'view-in-browser-href': '{{WEB_VERSION_URL}}',
     padding: '10px 24px',

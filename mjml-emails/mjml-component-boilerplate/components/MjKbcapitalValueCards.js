@@ -62,7 +62,7 @@ export default class MjKbcapitalValueCards extends BodyComponent {
     'card-1-label': 'Purchase & Rehab Financing',
     'card-2-value': '75%',
     'card-2-label': 'Up to ARV',
-    'card-3-value': '10.99%',
+    'card-3-value': '9.25%',
     'card-3-label': 'Rates As Low As',
   }
 

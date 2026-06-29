@@ -1,7 +1,7 @@
 <mjml>
   <mj-head>
     <mj-title>KB Capital Group - 100% Fix &amp; Flip Premier Loan</mj-title>
-    <mj-preview>100% financing of purchase and rehab funds - no down payment, rates as low as 10.99%.</mj-preview>
+    <mj-preview>100% financing of purchase and rehab funds - no down payment, rates as low as 9.25%.</mj-preview>
     <mj-breakpoint width="480px" />
     <mj-font
       name="Nunito"
@@ -25,7 +25,7 @@
 
     <mj-kbcapital-product-headline />
 
-    <mj-kbcapital-highlight-bar />
+    <mj-kbcapital-highlight-bar icon-src="https://resources.lekoj.com/kbcapital/icons/home-finance-icon-removebg.png" />
 
     <mj-kbcapital-cta-button />
 
@@ -35,9 +35,9 @@
 
     <mj-kbcapital-program-overview />
 
-    <mj-kbcapital-benefits />
+    <mj-kbcapital-benefits icon-src="https://resources.lekoj.com/kbcapital/icons/check-icon-removebg.png" />
 
-    <mj-kbcapital-qualify />
+    <mj-kbcapital-qualify icon-src="https://resources.lekoj.com/kbcapital/icons/check-icon-removebg.png" />
 
     <mj-kbcapital-cta-banner />
 
