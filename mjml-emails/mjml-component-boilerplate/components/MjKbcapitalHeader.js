@@ -18,7 +18,7 @@ export default class MjKbcapitalHeader extends BodyComponent {
 
   static defaultAttributes = {
     'background-color': '#FFFFFF',
-    'logo-src': 'https://ik.imagekit.io/lekoj2500/KB-Capital/KB_CAPITAL_LOGO_2024.png',
+    'logo-src': 'https://resources.lekoj.com/kbcapital/KB_CAPITAL_LOGO_2024.png',
     'logo-width': '180px',
     'logo-alt': 'KB Capital Group',
     'logo-href': 'https://www.kbcapitalgrp.com',

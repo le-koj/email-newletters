@@ -84,7 +84,7 @@ export default class MjKbcapitalHero extends BodyComponent {
     'text-color': KB_COLORS.text,
     'title-text': 'WHY KB CAPITAL GROUP?',
     'body-text': "When Other Lenders Won\u2019t, KB Capital Will.",
-    'image-src': 'images/100-fix-hero.png',
+    'image-src': 'https://resources.lekoj.com/kbcapital/100-fix-hero.png',
     'image-alt': 'Residential property under construction',
     'image-border-radius': '8px',
     'image-mobile-height': '240px',

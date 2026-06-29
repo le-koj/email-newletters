@@ -16,12 +16,12 @@
   </mj-head>
   <mj-body>
     <mj-kbcapital-view-in-browser
-      view-in-browser-href="https://www.kbcapitalgrp.com/campaigns/100-fix-flip-premier/web-version"
+      view-in-browser-href="{%link_webview}"
     />
 
-    <mj-kbcapital-header />
+    <mj-kbcapital-header logo-src="https://resources.lekoj.com/kbcapital/KB_CAPITAL_LOGO_2024.png" />
 
-    <mj-kbcapital-hero image-src="images/100-fix-hero.png" />
+    <mj-kbcapital-hero image-src="https://resources.lekoj.com/kbcapital/100-fix-hero.png" />
 
     <mj-kbcapital-product-headline />
 
