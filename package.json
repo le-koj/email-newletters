@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@react-email/preview-server": "^5.2.11",
-    "mjml": "^5.2.0",
+    "mjml": "^5.4.0",
     "react-email": "^5.2.11"
   },
   "dependencies": {
