@@ -1,0 +1,29 @@
+<mjml>
+  <mj-head>
+    <mj-title>The Advisory Brief | Meridian Advisory Group</mj-title>
+    <mj-preview>Q3 Planning: Focus, Forecast, and Follow Through</mj-preview>
+    <mj-breakpoint width="480px" />
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-body background-color="#EEF0EF" width="700px" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-text padding="0" />
+      <mj-button line-height="15px" text-decoration="none" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      body { margin: 0; padding: 0; background-color: #EEF0EF; }
+      a { color: inherit; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#EEF0EF" width="700px">
+    <mj-meridian-header view-in-browser-href="#" />
+    <mj-meridian-hero href="#" />
+    <mj-meridian-feature href="#" />
+    <mj-meridian-snapshot href="#" />
+    <mj-meridian-checklist-cta href="#" />
+    <mj-meridian-upcoming />
+    <mj-meridian-primary-cta href="#" />
+    <mj-meridian-footer unsubscribe-href="#" />
+  </mj-body>
+</mjml>

@@ -10,6 +10,7 @@
     "react-dom": "19.2.4"
   },
   "scripts": {
+    "build:meridian": "node mjml-emails/portfolio/Meridian/build.js",
     "email:dev": "email dev"
   },
   "name": "email-newletters",
