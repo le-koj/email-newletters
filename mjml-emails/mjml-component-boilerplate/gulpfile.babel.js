@@ -1,6 +1,5 @@
 import gulp from 'gulp'
 import babel from 'gulp-babel'
-import watch from 'gulp-watch'
 import log from 'fancy-log'
 import fs from 'fs'
 import path from 'path'
@@ -65,7 +64,7 @@ gulp.task('build', compile)
 
 gulp.task('watch', () => {
   compile()
-  return watch(
+  return gulp.watch(
     [
       path.normalize('components/**/*.js'),
       path.normalize('*.mjml'),
